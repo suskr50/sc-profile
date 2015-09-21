@@ -1,0 +1,216 @@
+/*
+ Theme Name:   Skillcrushstarter Child Theme
+ Theme URI:    http://example.com/skillcrushstarter-child/
+ Description:  Skillcrushstarter Child Theme - Skillcrush
+ Author:       Susan Schrum
+ Author URI:   http://www.skswebdev.com
+ Template:     skillcrushstarter
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  skillcrushstarter-child
+*/
+ 	
+@import url("../skillcrushstarter/style.css");
+
+body {
+	
+}
+/* HomePage */
+
+.home {
+	background: url(img/Skillcrush_Computer.jpg) no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
+/* Everyday styles */
+
+.center {
+	text-align:center;
+}
+
+.extra-space {
+	padding-top:20px;
+}
+
+/* Resume Styles */
+
+.resume-left  {
+	float:left;
+	width:450px;
+
+}
+
+.resume-right {
+	float:right;
+	width:350px;
+	
+}
+
+.bold-color {
+	color:#434343;
+	
+	font-weight:bold;
+}
+
+.accent-color {
+	color:#699DAD;
+}
+
+	.resume h3
+	{
+		
+		
+		font-size:20px;
+		padding-top:10px;
+		
+	}
+
+
+
+	.resume h2
+	{
+		
+		color:#699DAD;
+		font-size:22px;
+	}
+
+	.company{
+		color:#999999;
+		font-size:12px;
+		line-height:200%;
+	}
+
+	body, ul{
+		font-family:Arial, "Trebuchet MS";
+		font-size:16px;
+		color:#666666;
+
+
+	}
+	
+
+	.resume ul {
+		list-style-type:none;
+		margin: 0; 
+		padding: 0;
+
+	}
+
+	.nosidebar-page .main-content {
+	width: 100%;
+	float: none;
+	overflow: hidden;
+}
+
+
+/* Contact Me */
+
+
+.contactme-page .main-content {
+	width: 80%;
+	float: none;
+	overflow: hidden;
+	margin-left:10%;
+	
+}
+#ninja_forms_form1 {
+
+}
+
+#ninja_forms_form_1_cont {
+	font-family: 'Montserrat';
+	font-size:14px;
+	color: #606060;
+	padding-top:50px;
+
+	}
+
+
+#ninja_forms_field_1_label, #ninja_forms_field_2_label,#ninja_forms_field_3_label,#ninja_forms_field_4_label, #ninja_forms_field_5_label{
+	font-weight: normal;
+}
+
+#ninja_forms_field_1_div_wrap {
+	float:left;
+	width:49%
+}
+#ninja_forms_field_2_div_wrap {
+	float:right;
+	width:49%
+}
+
+#ninja_forms_field_5 {
+	 background: none repeat scroll 0 0 #823474;
+	 color:white;
+	 padding:10px 100px 10px 100px;
+}
+
+
+/* Body color change */
+
+body {
+	background: #fff;
+	border-top: 6px solid #823474;
+	color: #3b3b3b;
+	font: 17px/1.65 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.01em;
+}
+
+.page-header .top-logo .title {
+	color: #823474;
+	font: bold 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
+	letter-spacing: -0.034em;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+.entry-title a:hover {
+	color: #823474;
+}
+.entry-time {
+	color: #823474;
+	font-weight: 600;
+	font-size: 0.82em;
+}
+
+
+.entry-summary a {
+	color: #823474;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.category-page .page-header h1 span {
+	color: #823474;
+}
+
+
+.comment-list .comment a {
+	color: #823474;
+	text-decoration: none;
+}
+
+
+.comments-area .comment-reply-title {
+	color: #823474;
+	font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 2em 0 1em;
+}
+.comments-area .comment-reply-title a {
+	color: #823474;
+}
+.comments-area .comment-form p a {
+	color: #823474;
+}
+
+#sidebar .widget_categories h2,
+#sidebar .widget_archive h2 {
+	font: 600 14px 'Open Sans';
+	color: #823474;
+	margin-bottom: 20px;
+}
