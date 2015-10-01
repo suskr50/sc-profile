@@ -21,8 +21,8 @@
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage skillcrushstarter
- * @since Skillcrushstarter 1.0
+ * @subpackage Skillcrush_Starter
+ * @since Skillcrush Starter 1.0
  */
 function create_custom_post_types() {
     register_post_type( 'case_studies',

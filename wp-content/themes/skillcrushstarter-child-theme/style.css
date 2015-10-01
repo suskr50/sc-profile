@@ -214,3 +214,32 @@ body {
 	color: #823474;
 	margin-bottom: 20px;
 }
+
+/* Portfolio Work */
+
+#mission-going ul, #mission-gone ul {
+list-style: none;
+overflow:hidden
+}
+#mission-going li, #mission-gone ul li {
+float:left;
+color: red;
+text-align:center;
+margin:10px 20px 0 0px
+}
+
+
+.mimg img{
+	border:1px;
+	border-style:solid;
+	border-color:black;
+	margin-bottom:5px;
+	width:200%;
+
+}
+
+.featured-list h5 {
+	color:black;
+}
+
+
