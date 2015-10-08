@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: No Sideebar
+ * Template Name: Portfolio
  *
  * The template for displaying pages
  *

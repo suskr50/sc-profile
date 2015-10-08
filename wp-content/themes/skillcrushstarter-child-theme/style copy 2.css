@@ -15,8 +15,10 @@
 body {
 	
 }
+/* HomePage */
+
 .home {
-	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
+	background: url(img/Skillcrush_Computer.jpg) no-repeat center 0;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -141,7 +143,7 @@ body {
 }
 
 #ninja_forms_field_5 {
-	 background: none repeat scroll 0 0 #699DAD;
+	 background: none repeat scroll 0 0 #823474;
 	 color:white;
 	 padding:10px 100px 10px 100px;
 }
@@ -151,14 +153,14 @@ body {
 
 body {
 	background: #fff;
-	border-top: 6px solid #699DAD;
+	border-top: 6px solid #823474;
 	color: #3b3b3b;
 	font: 17px/1.65 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.01em;
 }
 
 .page-header .top-logo .title {
-	color: #699DAD;
+	color: #823474;
 	font: bold 1.88em/1.3125 'Montserrat', 'OpenSans', Arial, sans-serif;
 	letter-spacing: -0.034em;
 	display: block;
@@ -167,223 +169,48 @@ body {
 
 
 .entry-title a:hover {
-	color: #699DAD;
+	color: #823474;
 }
 .entry-time {
-	color: #699DAD;
+	color: #823474;
 	font-weight: 600;
 	font-size: 0.82em;
 }
 
 
 .entry-summary a {
-	color: #699DAD;
+	color: #823474;
 	text-decoration: underline;
 	font-weight: bold;
 }
 
 .category-page .page-header h1 span {
-	color: #699DAD;
+	color: #823474;
 }
 
 
 .comment-list .comment a {
-	color: #699DAD;
+	color: #823474;
 	text-decoration: none;
 }
 
 
 .comments-area .comment-reply-title {
-	color: #699DAD;
+	color: #823474;
 	font: bold 1.176em 'Montserrat', 'OpenSans', Arial, sans-serif;
 	text-transform: uppercase;
 	margin: 2em 0 1em;
 }
 .comments-area .comment-reply-title a {
-	color: #699DAD;
+	color: #823474;
 }
 .comments-area .comment-form p a {
-	color: #699DAD;
+	color: #823474;
 }
 
 #sidebar .widget_categories h2,
 #sidebar .widget_archive h2 {
 	font: 600 14px 'Open Sans';
-	color: #699DAD;
+	color: #823474;
 	margin-bottom: 20px;
 }
-
-/* Portfolio Work */
-
-#mission-going ul, #mission-gone ul {
-list-style: none;
-overflow:hidden
-}
-
-#mission-going li, #mission-gone ul li {
-float:left;
-color: red;
-text-align:center;
-margin:10px 20px 0 0px
-}
-
-
-.port-list img{
-	border:1px;
-	border-style:solid;
-	border-color:black;
-	margin-bottom:5px;
-	width=100%;
-}
-
-.featured-list h5 {
-	color:black;
-}
-
-
-
-
-.individual-list img{
-	border:1px;
-	border-style:solid;
-	border-color:#8b8b8b;
-}
-
-.port-list img{
-	border:1px;
-	border-style:solid;
-	border-color:black;
-	margin-bottom:5px;
-	width=100%;
-}
-
-/* About Page */
-.picleft {
-	float: left;
-    margin: 0 40px 80px 0 ;
-	width:200px;
-	height:200px;
-}
-
-.about-content {
-	text-align: left;
-	width:850px;
-	height:216px;
-  
-   
-}
-
-.about-content img { 
-	width:200px;
-	height:200px;
-}
-
-.about-content p {
-	 font-size: 17px;
-}
-
-
-/* NEW FRONT PAGE */
-
-.new-page {
-	background-color: rgb(231,113,139);
-	color:white;
-	height:300px;
-}
-
-.new-page2 {
-	background-color: rgb(244,244,246);
-	color:white;
-	height:300px;
-	border-bottom:3px rgb(231,113,139) solid;
-}
-
-
-
-.new-page3 {
-	background-color: rgb(256,256,256);
-	color:black;
-	height:300px;
-}
-
-
-.new-page ul,  .new-page3 ul {
-list-style: none;
-overflow:hidden
-}
-
-.new-page li, .new-page3 li {
-float:left;
-color: red;
-text-align:center;
-margin:0px 0px 0 0px
-}
-
-.new_page3 img {
-
-	border:3px;
-	border-style:solid;
-	border-color:rgb(165, 165, 175);
-	
-}
-
-.picframe {
-	border:3px;
-	border-style:solid;
-	border-color:rgb(229,232,237);
-	padding:5px 5px 5px 5px;
-	background-color:rgb(187, 193, 209);
-}
-
-
-.new-page4 {
-	background-color: black;
-	color:white;
-	height:75px;
-}
-
-
-.short1 {
-	background-color:white;
-	height: 300px;
-	width:250px;
-	border-top: 1px solid black;
-	color:black;
-	margin-top: 200px; /* half of height */
-    margin-left:28px;
-}
-
-.short3 {
-	background-color:white;
-	height: 300px;
-	width:350px;
-	border-top: 1px solid black;
-	color:black;
-	margin-top: 200px; /* half of height */
-    margin-left:28px;
-}
-
-.short1 p{
-	color: rgb(187, 193, 209);
-	font: 12px 'Montserrat', 'OpenSans', Arial, sans-serif;
-	margin: 0 25px 0 25px;
-	text-align:left;
-}
-
-.ninjaform {
-
-	font: 12px 'Montserrat', 'OpenSans', Arial, sans-serif;
-	margin: 0 25px 0 25px;
-}
-
-
-
-.item {
-   
-    height: 16px;
-}
-
-
-
-
-

@@ -30,7 +30,7 @@ get_header(); ?>
 			?>
 
 
-			<div class="col-md-4">
+			<div class="col-xs-4">
 				<div class="entry-wrap">			
 					<h2><?php the_title(); ?></h2>
 					<h5><?php echo $services; ?></h5>
@@ -39,25 +39,22 @@ get_header(); ?>
 					<?php if ($testimony) {?>
 					<a href="<?php echo $link ?>"><strong>Visit Live Site</strong></a>
 					<?php } ?>
-
-
 				</div>
-
 			</div>
-
-
-			<div class="col-md-7 col-md-offset-1  ">
-				<ul class="case-study-list mimg">
-					<div>
-					<?php if ($image1)  ?>
-					<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
-					<li><?php echo wp_get_attachment_image($image2,$size); ?></li>
-					<li><?php echo wp_get_attachment_image($image3,$size); ?></li>
-				</div>
+			<div class="col-xs-7 ">
+				<ul class="case-study-list ">
+					<div class="port-list">
+						<?php if ($image1)  {?>
+						<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
+						<?php }?>
+						<li><?php echo wp_get_attachment_image($image2,$size); ?></li>
+						<li><?php echo wp_get_attachment_image($image3,$size); ?></li>
+					</div>
 				</ul>
 			</div>
 
 		</div>
+
 
 		<div class="row">
 			<div class="col-md-9 col-md-offset-1">
@@ -69,7 +66,7 @@ get_header(); ?>
 
 
 
-		</div>
+	</div>
 
 </section>
 
