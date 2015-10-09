@@ -9,9 +9,9 @@
 get_header(); ?>
 
 <!-- BLOG PAGE -->
-<div class="new-pagep">
-	<div class="container">
-		<div class="contact-wrapper">
+<section class="blog-page">
+	<div class="container ">
+		<div class="main-cs-content  ">
 			<?php
 				// Start the Loop.
 			while ( have_posts() ) : the_post(); 
@@ -27,26 +27,25 @@ get_header(); ?>
 			?>
 
 
-
-			<aside class="contact-study-right ">
-				<ul class="case-study-list">
-					<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
-					<li><?php echo wp_get_attachment_image($image2,$size); ?></li>
-					<li><?php echo wp_get_attachment_image($image3,$size); ?></li>
-				</ul>
-			</aside>
-
-
-			<div class="contact-study-left font-test vap">			
+		<article class="case-study">	
+			<aside class="case-study-left">
+				<div class="entry-wrap">			
 					<h2><?php the_title(); ?></h2>
 					<h5><?php echo $services; ?></h5>
 					<h6>Client: <?php echo $client; ?></h6>
 					<?php the_content(); ?>
-					<a  href="<?php $link ?>"><strong>Visit Live Site</strong></a>
+					<a href="<?php $link ?>"><strong>Visit Live Site</strong></a>
 				</div>
 			</aside>
 
-			
+			<section class="case-study-right">
+				<ul class="case-study-list">
+					<?php if ($image1) ?>
+					<li><?php echo wp_get_attachment_image($image1,$size); ?></li>
+					<li><?php echo wp_get_attachment_image($image2,$size); ?></li>
+					<li><?php echo wp_get_attachment_image($image3,$size); ?></li>
+				</ul>
+			</section>
 		</article>
 
 		</div>
@@ -57,9 +56,8 @@ get_header(); ?>
 
 	<!-- END blog page -->
 
-	<footer class="navigation main-cs-content ">
-		 
-		<div class="left">&larr;<a href="<?php echo home_url()?>/#theportfolio">back to work</a></div>
+	<footer class="navigation main-cs-content">
+		<div class="left">&larr;<a href="">back to work</a></div>
 	</footer>
 	
 				<?php endwhile; ?>

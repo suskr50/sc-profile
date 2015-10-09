@@ -26,9 +26,9 @@ get_header(); ?>
 </section><!-- .home-page -->
 
 
-<section class="new-page2">
+<section class="new-page2" id="theportfolio">
 	<div class="site-content">
-		<div class="portfolio-wrapper">
+		<div class="portfolio-wrapper" >
 
 		<h2 > Portfolio of Work </h2>
 
@@ -68,7 +68,7 @@ get_header(); ?>
 
 <div class="new-pagec">
 	<div class="site-content">
-		<div class="contact-wrapper">
+		<div class="pcontact-wrapper">
 			<aside class="contact-study-right">
 				<h2 > Contact Me </h2>
 				<div class="ninjaform">
@@ -88,7 +88,7 @@ get_header(); ?>
 </div>	
 
 
-<section class="new-page3">
+<section class="new-page3" id="theabout">
 	<div class="site-content">
 		<div class="about-content">
 			<?php query_posts('pagename=about')?>
