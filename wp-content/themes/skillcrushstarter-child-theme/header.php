@@ -19,7 +19,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
 
@@ -34,12 +34,8 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header class="page-header container">
-			<a href="<?php echo site_url(); ?>" class="top-logo">
-				<span class="title"><?php bloginfo('name'); ?></span>
-				<span class="sub-title"><?php bloginfo('description'); ?></span>
-			</a>
-
+		<header class="page-header container ">
+			
 			<nav class="top-nav">
 				<?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
 			</nav>

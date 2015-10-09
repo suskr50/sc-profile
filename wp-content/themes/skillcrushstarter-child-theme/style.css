@@ -17,12 +17,12 @@ body {
 }
 .home {
 	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-height: 100%;
+	-webkit-background-size: 100% 300px;
+	-moz-background-size: 100% 300px;
+	-o-background-size: 100% 300px;
+	background-size: 100% 300px;
 }
+
 /* Everyday styles */
 
 .center {
@@ -122,7 +122,7 @@ body {
 	font-family: 'Montserrat';
 	font-size:14px;
 	color: #606060;
-	padding-top:50px;
+	
 
 	}
 
@@ -138,6 +138,10 @@ body {
 #ninja_forms_field_2_div_wrap {
 	float:right;
 	width:49%
+}
+
+#ninja_forms_field_4_div_wrap {
+	height:30px;
 }
 
 #ninja_forms_field_5 {
@@ -286,38 +290,76 @@ margin:10px 20px 0 0px
 /* NEW FRONT PAGE */
 
 .new-page {
-	background-color: rgb(231,113,139);
-	color:white;
-	height:300px;
+	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height:350px;
+	border-top: 13px rgb(231,113,139) solid;
 }
+
+
+.new-pagec {
+	background-color: white;
+	color:black;
+	height:450px;
+	padding-bottom:50px;
+
+}
+
 
 .new-page2 {
 	background-color: rgb(244,244,246);
-	color:white;
-	height:300px;
-	border-bottom:3px rgb(231,113,139) solid;
-}
-
-
-
-.new-page3 {
-	background-color: rgb(256,256,256);
 	color:black;
 	height:300px;
+	border-bottom:3px rgb(231,113,139) solid;
+	background:cover;
+	padding-bottom:50px;
+}
+
+.new-pageS {
+	background-color: rgb(231,113,139);
+	color:black;
+	height:450px;
+	border-bottom:3px rgb(231,113,139) solid;
+	
+}
+
+.new-page3 {
+	background-color: rgb(244,244,246);
+	color:black;
+	height:300px;
+	padding-bottom:50px;
+	float:clear;
 }
 
 
-.new-page ul,  .new-page3 ul {
+.new-page ul,  .new-page2 ul , .new-pagef ul{
 list-style: none;
 overflow:hidden
 }
 
-.new-page li, .new-page3 li {
+.new-page li, .new-page2 li  {
 float:left;
 color: red;
 text-align:center;
 margin:0px 0px 0 0px
 }
+
+.new-side {
+	color:black;
+	font-size: 20px;
+	padding-right:30px;
+}
+
+.new-pagef li {
+float:right;
+color: white;
+text-align:center;
+margin:0px 0px 0 0px
+}
+
 
 .new_page3 img {
 
@@ -340,6 +382,27 @@ margin:0px 0px 0 0px
 	background-color: black;
 	color:white;
 	height:75px;
+}
+
+.new-pagef1 {
+	background-color: black;
+	color: rgb(128,128,128);
+	height:75px;
+
+}
+
+.new-pagef {
+	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height:50px;
+	border-bottom: 13px rgb(231,113,139) solid;
+}
+
+.new-page4m {
+	margin:20px 0 70px 0;
 }
 
 
@@ -371,9 +434,8 @@ margin:0px 0px 0 0px
 }
 
 .ninjaform {
-
 	font: 12px 'Montserrat', 'OpenSans', Arial, sans-serif;
-	margin: 0 25px 0 25px;
+	margin: 0 25px 25px 25px;
 }
 
 
@@ -383,7 +445,40 @@ margin:0px 0px 0 0px
     height: 16px;
 }
 
+.mylogo {
+	font-family: 'Great Vibes', cursive;
+	font-size:40px;
+}
 
+.myheader {
+	margin-left:500px;
+	margin-top:100px;
+}
 
+.myheader a {
+	color:black;
+}
+
+.title, .subtitle {
+	color:white;
+	display: hidden;
+}
+
+.new-contact {
+	float:right;
+	width:500px;
+	
+}
+
+.new-service {
+	float:left;
+	width:300px;
+	padding-top:20px;
+
+}
+
+.list-services {
+	margin: 0 0 0 20px;
+}
 
 

@@ -1,0 +1,778 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Susan Schrum
+ Author URI:   http://www.skswebdev.com
+ Template:     accelerate-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+ 	
+@import url("../accelerate-theme/style.css");
+
+
+/* General */
+.center {
+	text-align:center;
+}
+
+body {
+	
+}
+
+
+
+
+/* Homepage Styles */
+.home-page {
+    background: url("img/SC_computer right.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height:200px;
+    margin: 0 0 0px;
+    padding: 100px 0;
+}
+
+
+.homepage-hero {
+	margin-left: auto;
+   	margin-right: auto;
+   	padding-top:50px;
+   	width:875px;
+   	color:white;
+ }
+
+ .mylogo2 {
+ 	margin-left:50px;
+ }
+
+.mylogo2 a {
+	font-family: 'Great Vibes', cursive;
+	font-size:40px;
+}
+
+
+ .homepage-hero h1 {
+	
+   	color:white;
+   	font-size: 52px;
+	font-family: 'Montserrat';
+	font-weight:bold;
+
+ }
+
+
+ .homepage-hero a {
+	
+   	color:white;
+   	font-family: 'Great Vibes', cursive;
+	font-size:40px;
+	font-weight:bold;
+
+ }
+
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+ }
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+    
+}
+
+/* Homepage Blog Style */
+
+.blog-post {
+	width: 50%;
+
+}
+
+.blog-post h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.blog-post h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	
+}
+
+.blog-post .read-more-link {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+
+}
+
+
+/* Case Studies Style */
+
+.main-cs-content {
+	width:75%;
+	margin-left:210px;
+}
+
+.main-acs-content {
+	width:75%;
+	margin-left:210px;
+	
+
+}
+
+.entry-header {
+	padding-left:150px;
+	float:left;
+}
+.entry_summary  {
+	margin-left:100px;
+
+}
+.case-study-left {
+	
+	float:left;
+	width:330px;
+	font-size:18px;
+
+}
+
+article.case-study {
+    clear: both;
+    margin: 40px 0 0;
+}
+
+.case-study-left h3 {
+	font-size:16px;
+	font-weight: lighter;
+	color:#606060;
+	padding-bottom:10px;
+
+}
+
+.case-study-left h5 {
+	 color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33333;
+    margin: 0 0 12px;
+    text-align:center;
+}
+
+.case-study-left h6 {
+	 font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 50px;
+}
+
+
+.case-study-right {
+	float:right;
+	width:706px;
+}
+
+.case-study-list img{
+	 border: 1px solid #dddddd;
+    margin-bottom: 100px;
+}
+
+.case-study-list{
+	list-style-type:none;
+}
+
+
+
+
+.leftsize h5 {
+
+}
+
+
+
+.leftsize h3 {
+	font-size:16px;
+	font-weight: lighter;
+	color:#606060;
+	padding-bottom:10px;
+
+}
+
+.leftsize{
+	float:left;
+	width:300px;
+	margin-left:150px;
+	font-size:18px;
+	}
+	
+
+
+#masthead nav ul li{
+	float:left;
+	margin: 0px 20px ;
+}
+
+#masthead nav {
+	margin-top:-25px;
+}
+
+.case-studies-images {
+	float:right;
+	width:50%;
+}
+
+.cs-pictures {
+	padding-top:30px;
+	border-style:solid;
+
+}
+
+
+/* Featured Work */
+
+.recent-posts {
+	margin-top:100px;
+	
+}
+
+.feature-posts {
+	margin-bottom:350px;
+	
+}
+
+.featured-list {
+	list-style-type:none;
+	
+}
+
+.individual-list {
+	float:left;
+	margin: 0px 15px;
+	
+
+}
+
+.individual-list h5 {
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:400; /* Semi Bold */
+}
+
+
+
+/* Contact Page */
+
+
+#content {
+	font-family: 'Montserrat';
+	color: #606060;
+	margin-left: 75px;
+	width:80%;
+	
+}
+
+#content p {
+	font-family: 'Montserrat';
+	color: #606060;
+}
+
+#ninja_forms_form_1_cont {
+	font-family: 'Montserrat';
+	font-size:14px;
+	color: #606060;
+	}
+
+
+#ninja_forms_field_1_label, #ninja_forms_field_2_label,#ninja_forms_field_3_label,#ninja_forms_field_4_label, #ninja_forms_field_5_label{
+	font-weight: normal;
+}
+
+#ninja_forms_field_1_div_wrap {
+	float:left;
+	width:49%
+}
+#ninja_forms_field_2_div_wrap {
+	float:right;
+	width:49%
+}
+
+#ninja_forms_field_3 {
+	height:75px;
+}
+
+#ninja_forms_field_5 {
+	 background: none repeat scroll 0 0 #45ac9d;
+	 float:right;
+	 color:white;
+	 padding:10px 100px 10px 100px;
+}
+
+
+/* About Styles */
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 300px;
+}
+
+.about-top {
+	text-align:center;
+	margin-left: auto;
+   	margin-right: auto;
+   	padding-top:50px;
+   	width:600px;
+   	color:white;
+    font-size: 25px;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:600; /* Semi Bold */
+}
+
+.about-top strong {
+	color:#45ac9d;
+}
+
+.about-services {
+	text-align:center;
+	padding-bottom: 10px;
+}
+
+.about-service h3{
+	font-weight:bold;
+	font-family:'montserrat';
+	font-size:16.5px;
+}
+
+
+
+.about-content {
+	
+	width:850px;
+	margin-left: auto;
+   	margin-right: auto;
+   	padding-top:20px;
+   	
+}
+
+.about-content img { 
+	width:200px;
+	height:200px;
+}
+
+.about-content p {
+	 font-size: 15px;
+	 font-family: 'open sans', Arial, sans-serif;
+	 font-weight:400; /* Semi Bold */
+}
+
+.about-content h2 {
+	 font-size: 40px;
+	 font-family: 'open sans', Arial, sans-serif;
+	 font-weight:400; /* Semi Bold */
+	 font-size:30px;
+	 text-transform:uppercase;
+	 margin-left:240px;
+}
+
+
+.picright {
+	float: right;
+    margin: 0 0 80px 40px;
+}
+.picleft {
+	float: left;
+    margin: 10px 40px 100px 0 ;
+}
+
+#call-to-action {
+	clear: both;
+	width:850px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+
+  	
+}
+
+#call-to-action p {
+	 font-size: 25px;
+	 font-family: 'open sans', Arial, sans-serif;
+	 font-weight:600; /* Semi Bold */
+	 margin-right:50px;
+}
+
+#call-to-action a {
+	
+	background-color: #45ac9d; 
+	width:400px;
+	padding: 15px 75px 15px 75px;
+	color:white;
+
+ }
+
+
+ /* Footer */
+
+ .site-footer2 {
+	width:950px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:80px;
+ }
+
+ .footerwrap {
+ 	 background-color:pink;
+   
+ }
+
+ 
+
+ #social ul li{
+ 	float:right;
+	margin: 0px 5px;
+	list-style-type:none;
+ }
+
+ /* Front Page Services Section */
+
+ .front-services {
+ 	clear: both;
+	width:960px;
+	margin-left: auto;
+    margin-right: auto;
+      }
+
+.front-services ul li{
+ 	float:left;
+	margin: 0px 15px;
+	list-style-type:none;
+ }
+
+ .front-services img {
+ 	height:200px;
+ 	width:200px;
+ }
+
+ .front-services h3 {
+ 	font-family: 'Montserrat';
+	font-size:18px;
+	font-weight:bold;
+ }
+
+  .front-services h4 {
+ 	font-size:16.5px;
+	font-weight:bold;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:600; /* Semi Bold */
+ }
+
+
+.portfolio-wrapper {
+	width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.portfolio-wrapper h2 {
+	font-weight:bold;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:400; /* Semi Bold */
+	font-size:30px;
+	text-transform:uppercase;
+	padding-bottom:15px;
+}
+
+.contact-wrapper {
+	width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:left;
+}
+.contact-wrapper h2 {
+	font-weight:bold;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:400; /* Semi Bold */
+	font-size:30px;
+	text-transform:uppercase;
+}
+/* NEW FRONT PAGE */
+
+
+.new-page {
+	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height:350px;
+	border-top: 13px rgb(231,113,139) solid;
+}
+
+
+.new-pagec {
+	background-color: white;
+	color:black;
+	height:500px;
+	padding-bottom:50px;
+
+}
+
+.new-pagec h2{
+	font-weight:bold;
+	font-family: 'open sans', Arial, sans-serif;
+	font-weight:400; /* Semi Bold */
+	font-size:30px;
+	text-transform:uppercase;
+}
+
+.new-page2 {
+	background-color: rgb(244,244,246);
+	color:black;
+	height:auto;F
+	border-bottom:3px rgb(231,113,139) solid;
+	}
+
+
+
+.new-pageS {
+	background-color: rgb(231,113,139);
+	color:black;
+	height:450px;
+	border-bottom:3px rgb(231,113,139) solid;
+	
+}
+
+.new-page3 {
+	background-color: rgb(244,244,246);
+	color:black;
+	height:400px;
+	padding-bottom:50px;
+	
+}
+
+
+.new-page ul,  .new-page2 ul , .new-pagef ul{
+list-style: none;
+overflow:hidden
+}
+
+.new-page li, .new-page2 li  {
+float:left;
+text-align:center;
+margin:0px 0px 0 0px
+}
+
+.new-side {
+	color:black;
+	font-size: 20px;
+	padding-right:30px;
+}
+
+.new-pagef li {
+float:right;
+color: white;
+text-align:center;
+margin:0px 0px 0 0px
+}
+
+
+.new_page3 img {
+
+	border:3px;
+	border-style:solid;
+	border-color:rgb(165, 165, 175);
+	
+}
+
+
+.picframe {
+	padding-right:30px;
+}
+ .picframe img{
+ 	border:1px;
+	border-style:solid;
+	border-color:black;
+ }
+
+
+.new-page4 {
+	background-color: black;
+	color:white;
+	height:75px;
+}
+
+.new-pagef1 {
+	background-color: black;
+	color: rgb(128,128,128);
+	height:75px;
+
+}
+
+.new-pagef {
+	background: url("http://skswebdev.com/wp-content/uploads/2015/08/Skillcrush_Computer.jpg") no-repeat center 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height:50px;
+	border-bottom: 13px rgb(231,113,139) solid;
+}
+
+.new-page4m {
+	margin:20px 0 70px 0;
+}
+
+
+.short1 {
+	background-color:white;
+	height: 300px;
+	width:250px;
+	border-top: 1px solid black;
+	color:black;
+	margin-top: 200px; /* half of height */
+    margin-left:28px;
+}
+
+.short3 {
+	background-color:white;
+	height: 300px;
+	width:350px;
+	border-top: 1px solid black;
+	color:black;
+	margin-top: 200px; /* half of height */
+    margin-left:28px;
+}
+
+.short1 p{
+	color: rgb(187, 193, 209);
+	font: 12px 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin: 0 25px 0 25px;
+	text-align:left;
+}
+
+.ninjaform {
+	font: 12px 'Montserrat', 'OpenSans', Arial, sans-serif;
+	margin: 0 25px 25px 25px;
+}
+
+
+
+.item {
+   
+    height: 16px;
+}
+
+
+
+.myheader {
+	margin-left:500px;
+	margin-top:100px;
+}
+
+.myheader a {
+	color:black;
+}
+
+.title, .subtitle {
+	color:white;
+	display: hidden;
+}
+
+.new-contact {
+	float:right;
+	width:400px;
+	
+}
+
+.new-service {
+
+	float:left;
+	width:100px;
+	
+
+}
+
+.list-services {
+	margin: 0 0 0 20px;
+}
+
+
+
+.contact-study-right {
+	float:right;
+	width:400px;
+	
+}
+
+.contact-study {
+    clear: both;
+    margin: 10px 0 0;
+   	
+}
+
+
+.contact-study-left {
+	float:left;
+	width:330px;
+	font-size:18px;
+}
+
+.site-info {
+	border-top: 1px dotted #e3e1e1;
+	padding-top:20px;
+	margin-top:40px;
+	background-color:#45ac9d
+}
+
+.site-footer {
+    clear: both;
+    color: black;
+    background-color:#45ac9d;
+    font-size: 15px;
+    background-color:#45ac9d
+}	
+
+.new-footer {
+	background-color: #45ac9d;
+	border: 1px black dotted;
+	padding-top:10px;
+
+}
+
+.footer-list {
+	font-size:12px;
+}
+
+.footer-list ul{
+list-style: none;
+overflow:hidden
+}
+
+.footer-list li  {
+float:left;
+text-align:center;
+margin:0px 0px 0 0px;
+width:300px;
+}
+
+
+.social-list ul{
+list-style: none;
+overflow:hidden
+}
+
+.social-list li  {
+float:left;
+text-align:center;
+margin:0px 5px;
+
+}
+
+ #
