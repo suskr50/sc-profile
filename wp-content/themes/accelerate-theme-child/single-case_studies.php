@@ -42,7 +42,9 @@ get_header(); ?>
 					<h5><?php echo $services; ?></h5>
 					<h6>Client: <?php echo $client; ?></h6>
 					<?php the_content(); ?>
-					<a  href="<?php $link ?>"><strong>Visit Live Site</strong></a>
+					<?php if ($link) {?>
+					<a  href="<?php echo $link ?>"><strong>Visit Live Site</strong></a>
+					<?php }?>
 				</div>
 			</aside>
 

@@ -34,8 +34,8 @@
 <li>
 					<div id="social-list">
 						<ul>
-							<li><img src="<?php echo home_url()."/wp-content/uploads/2015/08/linkedin-icon.png"?>"></li>
-							<li><img src="<?php echo home_url()."/wp-content/uploads/2015/08/twitter-icon.png"?>"></li>
+							<li><a href="https://www.linkedin.com/pub/susan-schrum/b6/416/200"> <img src="<?php echo home_url()."/wp-content/uploads/2015/08/linkedin-icon.png"?>"><a></li>
+							<li><a href="https://twitter.com/susan_schrum"><img src="<?php echo home_url()."/wp-content/uploads/2015/08/twitter-icon.png"?>"></a></li>
 						</ul>
 					</div>	
 				</li>
