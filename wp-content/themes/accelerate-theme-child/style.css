@@ -835,4 +835,54 @@ margin:0px 5px;
 
 }
 
- #
+/* RESUME styling */
+.resume {
+	width:100%;
+}
+
+.exp-wrapper {
+	padding-right:40px;
+}
+
+.resume-left {
+	width:70%;
+	float:left;
+
+}
+
+.resume-right {
+	width:30%;
+	float:right;
+
+}
+
+
+/* TESTING MEDIA QUERIES */
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+body.page {
+	background-color:green;
+}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+body.page {
+	background-color:pink;
+}
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+
+body.page {
+	background-color:blue;
+}
+}

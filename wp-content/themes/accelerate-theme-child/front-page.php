@@ -30,7 +30,7 @@ get_header(); ?>
 	<div class="site-content">
 		<div class="portfolio-wrapper" >
 
-		<h2 > Portfolio of Work </h2>
+		<h2 > Featured Work </h2>
 
 			<?php query_posts('posts_per_page=3&post_type=case_studies')?>
 
