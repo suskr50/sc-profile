@@ -455,6 +455,7 @@ article.case-study {
  /* Footer */
 
  .site-footer2 {
+
 	width:950px;
 	margin-left: auto;
     margin-right: auto;
@@ -792,12 +793,11 @@ margin:0px 0px 0 0px
 }
 
 .site-footer {
-    clear: both;
     color: black;
     background-color:#45ac9d;
     font-size: 15px;
-    background-color:#45ac9d
-}	
+   
+ }	
 
 .new-footer {
 	background-color: #45ac9d;
@@ -856,6 +856,13 @@ margin:0px 5px;
 
 }
 
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 
 /* TESTING MEDIA QUERIES */
 
@@ -873,8 +880,21 @@ body.page {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 body.page {
-	background-color:pink;
+	background-color:#CCCCCC;
 }
+
+.exp-wrapper {
+	padding-right:0px;
+}
+
+.resume-left {
+	float:none;
+}
+
+.resume-right {
+	float:none;
+}
+
 }
 
 
@@ -883,6 +903,6 @@ body.page {
 /* Styles */
 
 body.page {
-	background-color:blue;
+	background-color:pink;
 }
 }
