@@ -31,16 +31,10 @@ Use the following classes to style your popular posts list as you like.
 
 		/* Title styles */
 		.wpp-post-title {
-			color: #4b3b3b;
-	font-weight: 700;
-	text-decoration: underline;
-
 		}
 		
 		/* Excerpt styles */
 		.wpp-excerpt {
-			font: 14px/28px 'Open Sans';
-	margin-bottom: 20px;
 		}
 		
 		/* Stats tag styles */

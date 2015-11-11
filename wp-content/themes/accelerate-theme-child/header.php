@@ -32,13 +32,8 @@
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet" type='text/css'>
-
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/media.css" />
-
 	<?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -53,6 +48,9 @@
 			<div class="clearfix"></div>
 		</div>
 
+
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">
+
+		

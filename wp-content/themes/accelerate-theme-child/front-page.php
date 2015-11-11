@@ -14,20 +14,25 @@
 
 get_header(); ?>
 
+ 
+
+
+
+
 <section class="home-page">
-	<div class="site-content">
+	
 		<?php while ( have_posts() ) : the_post(); ?>
 		<div class="mylogo2">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php the_content(); ?>
 		</div>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
+	
 </section><!-- .home-page -->
 
 
 <section class="new-page2" id="theportfolio">
-	<div class="site-content">
+	
 		<div class="portfolio-wrapper" >
 
 		<h2 > Featured Work </h2>
@@ -61,13 +66,13 @@ get_header(); ?>
 				<?php wp_reset_query(); // resets the altered query back to the original ?>
 			</ul>
 
-</div>
+
 </section>
 
 
 
 <div class="new-pagec">
-	<div class="site-content">
+	
 		<div class="pcontact-wrapper">
 			<aside class="contact-study-right">
 				<h2 > Contact Me </h2>
@@ -84,7 +89,7 @@ get_header(); ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 			</div>
 		</div>
-	</div>
+	
 </div>	
 
 

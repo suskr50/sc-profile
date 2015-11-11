@@ -36,3 +36,4 @@
 		</header>
 
 		<div id="main" class="site-main">
+			<h1> Inside site-main and main </h1>
