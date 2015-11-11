@@ -22,16 +22,6 @@ body {
 	
 }
 
-.site-content,
-.site-footer,
-.header-main {
-	width:960px;
-	margin:auto;
-	padding:0 10px;
-}
-
-
-
 /* Homepage Styles */
 .home-page {
     background: url("img/SC_computer right.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -122,8 +112,11 @@ body {
 /* Case Studies Style */
 
 
+
 .main-acs-content {
-	width:100%;
+	width:75%;
+	margin-left:210px;
+	
 
 }
 
@@ -162,13 +155,12 @@ article.case-study {
 
 .case-study-left {
 	float:left;
-	width:70%;
+	width:430px;
 	font-size:18px;
 }
 
 .case-study-right {
 	float:right;
-	width:30%;
 
 }
 
@@ -458,19 +450,17 @@ article.case-study {
 	color:white;
 
  }
-/* NOT USED */
+
+
+ /* Footer */
 
  .site-footer2 {
+
 	width:950px;
 	margin-left: auto;
     margin-right: auto;
     margin-top:80px;
  }
-
-
- /* Footer */
-
-
 
  .footerwrap {
  	 background-color:pink;
@@ -519,7 +509,7 @@ article.case-study {
 
 
 .portfolio-wrapper {
-	width:100%
+	width:800px;
 	margin-right:auto;
 	margin-left:auto;
 	padding-top:10px;
@@ -802,29 +792,25 @@ margin:0px 0px 0 0px
 	background-color:#45ac9d
 }
 
-.NOT-USEDsite-footer {
-    clear: both;
+.site-footer {
     color: black;
     background-color:#45ac9d;
     font-size: 15px;
-    background-color:#45ac9d
-}	
+   
+ }	
 
 .new-footer {
 	background-color: #45ac9d;
 	border: 1px black dotted;
 	padding-top:10px;
-}
 
+}
 
 .footer-list {
 	font-size:12px;
-	background-color:#45ac9d;
-	color:white;
-	
 }
 
-.footer-list ul {
+.footer-list ul{
 list-style: none;
 overflow:hidden
 }
@@ -833,42 +819,23 @@ overflow:hidden
 float:left;
 text-align:center;
 margin:0px 0px 0 0px;
-width:30%;
+width:300px;
 }
 
-#social-list {
-	
-}
 
-#social-list ul{
+.social-list ul{
 list-style: none;
 overflow:hidden
 }
 
-#social-list li  {
+.social-list li  {
 float:left;
 text-align:center;
 margin:0px 5px;
 
 }
 
-/* Case study */
-.caseexp-wrapper {
-	padding-right:40px;
-}
-
-.case-left {
-	width:70%;
-	float:left;
-
-}
-
-.case-right {
-	width:30%;
-	float:right;
-
-}
- /* RESUME styling */
+/* RESUME styling */
 .resume {
 	width:100%;
 }
@@ -897,32 +864,24 @@ margin:0px 5px;
    clear: both;
 }
 
-
-.site-content,
-.site-footer,
-.header-main {
-	width:1024px;
-	margin:auto;
-	padding:0 10px;
-}
-
-
 /* TESTING MEDIA QUERIES */
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and  (orientation:portrait){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
- .contact-study-left {
- 	background-color:pink;
- }
+body.page {
+	background-color:green;
+}
 
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
-
+body.page {
+	background-color:#CCCCCC;
+}
 
 .exp-wrapper {
 	padding-right:0px;
@@ -943,5 +902,7 @@ margin:0px 5px;
 @media only screen  and (min-width : 1224px) {
 /* Styles */
 
-
+body.page {
+	background-color:pink;
+}
 }

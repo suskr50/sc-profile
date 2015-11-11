@@ -32,7 +32,7 @@ get_header(); ?>
 
 		<h2 > Featured Work </h2>
 
-			<?php query_posts('posts_per_page=3&post_type=case_studies')?>
+			<?php query_posts('posts_per_page=4&post_type=case_studies')?>
 
 			<ul class="featured-list ">
 				

@@ -13,38 +13,25 @@
 		</div><!-- #main -->
 
 
-		<footer id="colophon" class=" new-footer" role="contentinfo" >
-			
-			
-				<div class="footer-list">
+		<footer id="colophon" class="site-footer " role="contentinfo">
+			<div class="site-info">
+				<div class="site-description">
+				<p><?php bloginfo('description'); ?></p>
+				<p>&copy; <?php bloginfo('title'); ?>, LLC
+				</div>
 				
+			<div id="social">
 				<ul>
-					<li>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/linkedin-icon.png"?>"></li>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/facebook-icon.png"?>"></li>
+					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/twitter-icon.png"?>"></li>
 					
-						<p>&copy; 2015 <?php bloginfo('title'); ?> </p>
-						
-					
-</li>
-<li>
-					
-						<p> email: <a href="mailto:susanschrum@gmail.com"> susanschrum@gmail.com </a> <br>
-						tel: 352-812-7321 </p>
-					
-</li>
-<li>
-					<div id="social-list">
-						<ul>
-							<li><a href="https://www.linkedin.com/pub/susan-schrum/b6/416/200"> <img src="<?php echo home_url()."/wp-content/uploads/2015/08/linkedin-icon.png"?>"><a></li>
-							<li><a href="https://twitter.com/susan_schrum"><img src="<?php echo home_url()."/wp-content/uploads/2015/08/twitter-icon.png"?>"></a></li>
-						</ul>
-					</div>	
-				</li>
-			</ul>
-		
-</div>
-			
+				</ul>
+			</div>	
+
+
+			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
-	
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
