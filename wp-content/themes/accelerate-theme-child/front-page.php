@@ -15,10 +15,6 @@
 get_header(); ?>
 
  
-
-
-
-
 <section class="home-page">
 	
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -100,9 +96,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post();?>
 			<article >
 				<h2 > A little about me. </h2>
-				<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
-				<img class="picleft" src="<?php echo $url ?>" />
-
+				<div class="picleft">
+				<?php echo the_post_thumbnail( 'thumbnail' ); ?>
+			</div>
 				<p><?php the_content(); ?></p>
 			</article>
 		<?php endwhile; // end of the loop. ?>
