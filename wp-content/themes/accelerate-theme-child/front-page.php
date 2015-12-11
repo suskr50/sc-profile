@@ -16,6 +16,7 @@ get_header(); ?>
 
  
 <section class="home-page">
+	<div class="header-main">
 	
 		<?php while ( have_posts() ) : the_post(); ?>
 		<div class="mylogo2">
@@ -23,6 +24,7 @@ get_header(); ?>
 			<?php the_content(); ?>
 		</div>
 		<?php endwhile; // end of the loop. ?>
+	</div>
 	
 </section><!-- .home-page -->
 

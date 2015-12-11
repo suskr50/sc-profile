@@ -14,74 +14,27 @@
 
 get_header(); ?>
 
-<section class="about-page">
-	<div class="site-content">
+
+<div id="primary" class="site-content content-page about-page">
+	<div id="content" role="main">
+
 		<?php while ( have_posts() ) : the_post(); 
-		$content_1 = get_field("content_1");
-		$picture_1 = get_field("picture_1");
-		$title_1 = get_field("title_1");
-		$service = get_field("services");
-		$content_2 = get_field("content_2");
-		$picture_2 = get_field("picture_2");
-		$title_2 = get_field("title_2");
-		$content_3 = get_field("content_3");
-		$picture_3 = get_field("picture_3");
-		$title_3 = get_field("title_3");
-		$content_4 = get_field("content_4");
-		$picture_4 = get_field("picture_4");
-		$title_4 = get_field("title_4");
+			$skills = get_field("skils");
 		?>
-		<div class="about-top">
-			<?php the_content(); ?>
-		</div>
-	<?php endwhile; // end of the loop. ?>
-</div><!-- .container -->
-</section><!-- .home-page -->
+		
+		<h2><?php the_title(); ?></h2>
+		
+			
+				<div class="exp-wrapper">
+				<div> <?php the_post_thumbnail("thumbnail");?> </div>
+					<?php the_content(); ?>
+				</div>
+				</div>
+			
+			
+		<?php endwhile; // end of the loop. ?>
 
-<section class="about-services">
-	<div class="site-content">
-		<div>
-			<h3 > OUR SERVICES </h3>
-			<p> <?php echo $service ?> </p>
-		</div>
-	</div>
-</section>
-
-
-
-<section class="about-content">
-	<div >
-		<h2><img class="picleft" src="<?php echo $picture_1 ?>" ><?php echo $title_1; ?></h2>
-		<p> <?php echo $content_1; ?> </p>
-	</div>
-</section>
-
-<section class="about-content">
-	<div >
-		<h2><img class="picright" src="<?php echo $picture_2 ?>" ><?php echo $title_2; ?></h2>
-		<p> <?php echo $content_2; ?> </p>
-	</div>
-</section>
-
-<section class="about-content">
-	<div >
-		<h2><img class="picleft" src="<?php echo $picture_3 ?>" ><?php echo $title_3; ?></h2>
-		<p> <?php echo $content_3; ?> </p>
-	</div>
-</section>
-
-
-<section class="about-content">
-	<div >
-		<h2><img class="picright" src="<?php echo $picture_4 ?>" ><?php echo $title_4; ?></h2>
-		<p> <?php echo $content_4; ?> </p>
-	</div>
-</section>
-
-
-<section id="call-to-action">	
-	<p > Interested in working with us? &nbsp&nbsp&nbsp&nbsp&nbsp  <span > <a  href="<?php home_url().'/contact-us'; ?>">Contact Us</a> </p>
-</section>
-
+	</div><!-- #content -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

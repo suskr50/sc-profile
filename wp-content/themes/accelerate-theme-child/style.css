@@ -346,12 +346,17 @@ article.case-study {
 	 padding:10px 100px 10px 100px;
 }
 
+/* About Page */
+.about-page {
+	align:center;
+}
+.about-page img {
+	padding-right:10px;
+	float:left;
+}
+
 
 /* About Styles */
-.about-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 300px;
-}
 
 .about-top {
 	text-align:center;
@@ -464,6 +469,7 @@ article.case-study {
 
  .footerwrap {
  	 background-color:pink;
+ 	 margin:auto;
     }
 
  
@@ -827,6 +833,8 @@ width:30%;
 }
 
 #social-list {
+	width:125px;
+	float:right;
 	
 }
 
@@ -838,8 +846,6 @@ overflow:hidden
 #social-list li  {
 float:left;
 text-align:center;
-margin:0px 5px;
-
 }
 
 /* Case study */
