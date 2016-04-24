@@ -1,0 +1,94 @@
+.center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.body {
+  font-size: 16px; }
+
+.home-page {
+  background: url("img/SC_computer right.jpg") no-repeat scroll left center/cover transparent;
+  background-size: 100% 100%; }
+
+.portfolio {
+  width: 1200px;
+  margin: 0 auto; }
+  .portfolio .portfolio-wrapper {
+    width: 100%;
+    background-color: pink; }
+  .portfolio ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: orange; }
+    .portfolio ul li {
+      float: left;
+      text-align: center;
+      margin: 0px 0px 0 0px; }
+
+/** Front Page Services */
+.services {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: yellow; }
+  .services .contact-wrapper {
+    width: 50%;
+    float: right; }
+  .services .service-wrapper {
+    width: 50%;
+    float: left; }
+
+/** Front Page About **/
+.about {
+  width: 1200px;
+  margin: 0 auto; }
+  .about .about-wrapper {
+    background-color: pink;
+    width: 75%;
+    margin: 0 auto; }
+    .about .about-wrapper figure {
+      float: left;
+      margin: 80px 15px 10px 10px; }
+    .about .about-wrapper .about-content {
+      width: 75%;
+      float: left; }
+
+/** Front Page About **/
+footer {
+  background-color: #45ac9d;
+  border-top: 1px black dotted;
+  padding-top: 10px;
+  color: white; }
+  footer #social {
+    color: white; }
+    footer #social ul {
+      list-style: none;
+      overflow: hidden; }
+      footer #social ul li:nth-child(1) {
+        float: right;
+        margin-right: 40px;
+        font-size: 2em; }
+      footer #social ul li:nth-child(2) {
+        float: right;
+        margin-right: 20px;
+        font-size: 2em; }
+      footer #social ul li:nth-child(3) {
+        float: left;
+        margin-right: 20px;
+        width: 33%; }
+      footer #social ul li:nth-child(4) {
+        float: left;
+        width: 40%;
+        margin-right: 20px; }
+      footer #social ul a {
+        color: black; }
+      footer #social ul a:hover {
+        color: white; }
+
+/*# sourceMappingURL=newstye.css.map */

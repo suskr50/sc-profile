@@ -1,0 +1,189 @@
+$main-color: #45ac9d;
+$secondary-back:#F4F4F6;
+$text-color:#606060;
+$main-font:'Montserrat';
+
+.center {text-align:center}
+.clear {clear:both;}
+.float-right {float:right;}
+.float-left {float:left;}
+
+.site-size {
+	width:1200px;
+	margin:0 auto;
+}
+
+.body {
+	font-size:16px;
+	color:$text-color;
+
+}
+#masthead {
+	background: none repeat scroll 0 0 $main-color;
+
+	nav {
+		margin-top:-25px;
+		ul li{
+			float:left;
+			margin: 0px 20px ;
+		}
+	}
+}
+.home-page {
+	background: url("img/SC_computer right.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	background-size:cover;
+	margin:0;
+
+
+}
+
+.portfolio {
+	background-color:$secondary-back;
+	padding-top:40px;
+	padding-bottom:40px;
+	.portfolio-wrapper {
+		@extend .site-size;
+
+		h1 {
+			text-align:center;
+			text-decoration:uppercase;
+			color:$text-color;
+			padding-bottom:20px;
+		}
+
+		.individual-list {
+	
+			width:25%;
+		
+		figure {
+			border:1px solid black;
+			
+			img {
+				width:100%;
+				height:auto;
+			}
+		}
+}
+
+		ul { list-style: none;
+			overflow:hidden;
+			li {
+				float:left;
+				text-align:center;
+				margin:0px 20px 0 0px
+			}
+		}
+	}
+}
+
+/** Front Page Services */
+.services {
+	.service-wrapper {
+		@extend .site-size;
+		.contact-wrapper {
+			width:50%;
+			float:right;
+			
+		}
+		.service-wrapper {
+			width:50%;
+			float:left;
+		}
+	}	
+}
+
+/** Front Page About **/
+.about {
+	background-color:$secondary-back;
+
+	.about-wrapper {
+		@extend .site-size;
+				
+			figure {
+				float:left;
+				margin:80px 15px 10px 10px;
+			}
+			.about-content {
+				
+				width:75%;
+				float:left;
+			}
+		
+	}
+}
+
+/** Footer **/
+
+footer {
+	width:100%;
+	border-top: 1px black dotted;
+	padding-top:10px;
+	.footer-wrapper {
+		background-color: $main-color;
+
+		color:white;
+
+		#social {
+			color:white;
+
+			ul { 
+				list-style: none;
+				overflow:hidden;
+
+				li:nth-child(1) {
+					float:right;
+					margin-right:40px;
+
+					font-size:2em;
+				}
+				li:nth-child(2) {
+					float:right;
+					margin-right:20px;
+
+					font-size:2em;
+				}
+				li:nth-child(3) {
+					float:left;
+					margin-right:20px;
+					width:33%;
+
+
+				}
+				li:nth-child(4) {
+					float:left;
+					width:40%;
+					margin-right:20px;
+
+				}
+
+				a {
+					color:black;
+				}
+				a:hover {
+					color:white;
+				}
+
+
+
+			}
+		}
+	}
+
+} 
+
+
+/* Resume Page */
+.resume-wrapper {
+	aside {
+		
+		width:25%;
+		float:right;
+	}
+	article {
+		
+		width:75%;
+		float:left;
+
+		
+	}
+}

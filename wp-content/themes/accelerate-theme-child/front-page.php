@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
- 
+
 <section class="home-page">
 	<div class="header-main">
 	
@@ -29,13 +29,13 @@ get_header(); ?>
 </section><!-- .home-page -->
 
 
-<section class="new-page2" id="theportfolio">
+<section class="new-page2 portfolio" id="theportfolio">
 	
 		<div class="portfolio-wrapper" >
 
-		<h2 > Featured Work </h2>
+		<h1 > Featured Work </h1>
 
-			<?php query_posts('posts_per_page=4&post_type=case_studies')?>
+			<?php query_posts('posts_per_page=5&post_type=case_studies')?>
 
 			<ul class="featured-list ">
 				
@@ -52,11 +52,11 @@ get_header(); ?>
 				?>
 
 				<li class="individual-list">
-				<div class="picframe">	
+				
 					<figure >
 						<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image1,$size); ?></a>
 					</figure>
-				</div>
+				
 					<h5> <?php echo $services ?> </h5>
 
 				</li>
@@ -69,44 +69,44 @@ get_header(); ?>
 
 
 
-<div class="new-pagec">
-	
-		<div class="pcontact-wrapper">
-			<aside class="contact-study-right">
-				<h2 > Contact Me </h2>
-				<div class="ninjaform">
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }?>
-				</div>
-			</aside>
-			<div class="contact-study-left">
-				<h2 > MY SERVICES </h2>
-				<?php query_posts('pagename=services')?>
-				<?php while ( have_posts() ) : the_post();?>
-				<div class="list-services"><?php the_content()?></div>
-			<?php endwhile; // end of the loop. ?>
-			<?php wp_reset_query(); // resets the altered query back to the original ?>
-			</div>
+<section class="services">
+	<div class="service-wrapper">
+	<div class="contact-wrapper">
+		<h2 > Contact Me </h2>
+			<i class="fa fa-facebook-official"></i>
+		<div class="ninjaform">
+			<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }?>
 		</div>
-	
-</div>	
-
-
-<section class="new-page3" id="theabout">
-	<div class="site-content">
-		<div class="about-content">
-			<?php query_posts('pagename=about')?>
-			<?php while ( have_posts() ) : the_post();?>
-			<article >
-				<h2 > A little about me. </h2>
-				<div class="picleft">
-				<?php echo the_post_thumbnail( 'thumbnail' ); ?>
-			</div>
-				<p><?php the_content(); ?></p>
-			</article>
+	</div>
+	<div class="service-wrapper">
+		<h2 > MY SERVICES </h2>
+		<?php query_posts('pagename=services')?>
+		<?php while ( have_posts() ) : the_post();?>
+			<div class="list-services"><?php the_content()?></div>
 		<?php endwhile; // end of the loop. ?>
 		<?php wp_reset_query(); // resets the altered query back to the original ?>
 	</div>
+	<div class="clear"></div>
 </div>
+</section>	
+
+
+<section class="about">
+	<div class="about-wrapper">
+		
+		<?php query_posts('pagename=about')?>
+		<?php while ( have_posts() ) : the_post();?>
+			<figure>
+				<?php echo the_post_thumbnail( 'thumbnail' ); ?>	
+			</figure>
+			<div class="about-content">
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; // end of the loop. ?>
+		<?php wp_reset_query(); // resets the altered query back to the original ?>
+	
+	</div>
+	<div class="clear"></div>
 </section>	
 
 

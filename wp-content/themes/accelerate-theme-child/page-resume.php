@@ -16,9 +16,12 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); 
 			$skills = get_field("skils");
 		?>
-		
+		<div class="resume-wrapper">
+		<article>
 		<h2><?php the_title(); ?></h2>
-		
+		</article>
+
+		<aside>
 			<div class="resume-left">
 				<div class="exp-wrapper">
 				
@@ -26,10 +29,13 @@ get_header(); ?>
 				</div>
 				</div>
 			<div class="resume-right">
+
 		
 			
 				<?php echo $skills; ?>
 			</div>
+			<aside>
+		</div>
 			
 		<?php endwhile; // end of the loop. ?>
 
