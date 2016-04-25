@@ -11,6 +11,24 @@
 */
  	
 @import url("../accelerate-theme/style.css");
-@import url("../accelerate-theme-child/css/newstyle.css")
+@import url("css/newstyle.css");
 
+
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	@import "css/768up";
+
+	blockquote {
+		color:blue;
+	}
+
+
+} // end of media query
 

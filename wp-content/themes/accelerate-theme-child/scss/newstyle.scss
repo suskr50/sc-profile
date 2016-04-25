@@ -2,6 +2,7 @@ $main-color: #45ac9d;
 $secondary-back:#F4F4F6;
 $text-color:#606060;
 $main-font:'Montserrat';
+$border-color: #888888;
 
 .center {text-align:center}
 .clear {clear:both;}
@@ -14,10 +15,46 @@ $main-font:'Montserrat';
 }
 
 .body {
-	font-size:16px;
+	
 	color:$text-color;
-
+	
+	
 }
+
+.main-content {
+	float:none;
+	padding:0;
+	margin:0 auto;
+	
+}
+
+/**************************/
+/*  Head and Paragraph Styles */
+/**************************/
+
+h1 {
+	font-size: 2rem;
+	text-transform:uppercase;
+}
+h2 {
+	font-size: 1.75rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size:1.25rem;
+}
+
+h5 {
+	font-size:1rem;
+}
+
+h6 {
+	font-size:0.5rem;
+}
+
+
 #masthead {
 	background: none repeat scroll 0 0 $main-color;
 
@@ -29,13 +66,85 @@ $main-font:'Montserrat';
 		}
 	}
 }
+
+
+
+/*  SINGLE PORTFOLIO PAGE */
 .home-page {
-	background: url("img/SC_computer right.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	background: url("../img/SC_computer right.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 	background-size:cover;
 	margin:0;
-
-
 }
+
+
+/**************************/
+/*  Footer                */
+/**************************/
+
+.site-info	{
+	background-color:yellow;
+
+	.site-copyright {
+		width:10%;
+		float:left;
+	}
+
+	.site-contact {
+		width:10%;
+		float:left;
+	}
+
+	.site-social {
+		width:33%;
+		float:right;
+
+	}
+
+	
+}
+
+
+
+
+
+
+/**************************/
+/*  SINGLE PORTFOLIO PAGE */
+/**************************/
+.portfolio-page {
+	margin-top:50px;
+	aside {
+		width:50%;
+		float:left;
+		li {
+			list-style-type:none;
+			margin-bottom:40px;
+			figure img{
+				width:100%;
+				height:auto;
+				border: 1px solid $border-color;
+			}
+		}
+	}
+	article {
+		h1 {
+			color:$text-color;
+		}
+		blockquote {
+			margin: 0 30px 30px 20px;
+			text-align:justify;
+		}
+		width:50%;
+		float:left;
+
+		#service-color {
+			color:$border-color;
+		}
+	}
+}
+
+
+
 
 .portfolio {
 	background-color:$secondary-back;
@@ -112,12 +221,28 @@ $main-font:'Montserrat';
 	}
 }
 
-/** Footer **/
+/**************************/
+/*  Footer                */
+/**************************/
 
-footer {
+.site-footer	{
+background-color:yellow;
+
+
+		.copyright,
+		.contact {
+		width:30%;
+		float:left;
+	}
+
+	
+}
+
+.the-footer {
 	width:100%;
 	border-top: 1px black dotted;
 	padding-top:10px;
+
 	.footer-wrapper {
 		background-color: $main-color;
 

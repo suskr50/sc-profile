@@ -1,0 +1,248 @@
+.center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.site-size, .portfolio .portfolio-wrapper, .services .service-wrapper, .about .about-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.body {
+  color: #606060;
+}
+
+.main-content {
+  float: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/**************************/
+/*  Head and Paragraph Styles */
+/**************************/
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+#masthead nav {
+  margin-top: -25px;
+}
+#masthead nav ul li {
+  float: left;
+  margin: 0px 20px;
+}
+
+/*  SINGLE PORTFOLIO PAGE */
+.home-page {
+  background: url("../img/SC_computer right.jpg") no-repeat scroll left center/cover transparent;
+  background-size: cover;
+  margin: 0;
+}
+
+/**************************/
+/*  Footer                */
+/**************************/
+.site-info {
+  background-color: yellow;
+}
+.site-info .site-copyright {
+  width: 10%;
+  float: left;
+}
+.site-info .site-contact {
+  width: 10%;
+  float: left;
+}
+.site-info .site-social {
+  width: 33%;
+  float: right;
+}
+
+/**************************/
+/*  SINGLE PORTFOLIO PAGE */
+/**************************/
+.portfolio-page {
+  margin-top: 50px;
+}
+.portfolio-page aside {
+  width: 50%;
+  float: left;
+}
+.portfolio-page aside li {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.portfolio-page aside li figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #888888;
+}
+.portfolio-page article {
+  width: 50%;
+  float: left;
+}
+.portfolio-page article h1 {
+  color: #606060;
+}
+.portfolio-page article blockquote {
+  margin: 0 30px 30px 20px;
+  text-align: justify;
+}
+.portfolio-page article #service-color {
+  color: #888888;
+}
+
+.portfolio {
+  background-color: #F4F4F6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.portfolio .portfolio-wrapper h1 {
+  text-align: center;
+  text-decoration: uppercase;
+  color: #606060;
+  padding-bottom: 20px;
+}
+.portfolio .portfolio-wrapper .individual-list {
+  width: 25%;
+}
+.portfolio .portfolio-wrapper .individual-list figure {
+  border: 1px solid black;
+}
+.portfolio .portfolio-wrapper .individual-list figure img {
+  width: 100%;
+  height: auto;
+}
+.portfolio .portfolio-wrapper ul {
+  list-style: none;
+  overflow: hidden;
+}
+.portfolio .portfolio-wrapper ul li {
+  float: left;
+  text-align: center;
+  margin: 0px 20px 0 0px;
+}
+
+/** Front Page Services */
+.services .service-wrapper .contact-wrapper {
+  width: 50%;
+  float: right;
+}
+.services .service-wrapper .service-wrapper {
+  width: 50%;
+  float: left;
+}
+
+/** Front Page About **/
+.about {
+  background-color: #F4F4F6;
+}
+.about .about-wrapper figure {
+  float: left;
+  margin: 80px 15px 10px 10px;
+}
+.about .about-wrapper .about-content {
+  width: 75%;
+  float: left;
+}
+
+/**************************/
+/*  Footer                */
+/**************************/
+.site-footer {
+  background-color: yellow;
+}
+.site-footer .copyright,
+.site-footer .contact {
+  width: 30%;
+  float: left;
+}
+
+.the-footer {
+  width: 100%;
+  border-top: 1px black dotted;
+  padding-top: 10px;
+}
+.the-footer .footer-wrapper {
+  background-color: #45ac9d;
+  color: white;
+}
+.the-footer .footer-wrapper #social {
+  color: white;
+}
+.the-footer .footer-wrapper #social ul {
+  list-style: none;
+  overflow: hidden;
+}
+.the-footer .footer-wrapper #social ul li:nth-child(1) {
+  float: right;
+  margin-right: 40px;
+  font-size: 2em;
+}
+.the-footer .footer-wrapper #social ul li:nth-child(2) {
+  float: right;
+  margin-right: 20px;
+  font-size: 2em;
+}
+.the-footer .footer-wrapper #social ul li:nth-child(3) {
+  float: left;
+  margin-right: 20px;
+  width: 33%;
+}
+.the-footer .footer-wrapper #social ul li:nth-child(4) {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+.the-footer .footer-wrapper #social ul a {
+  color: black;
+}
+.the-footer .footer-wrapper #social ul a:hover {
+  color: white;
+}
+
+/* Resume Page */
+.resume-wrapper aside {
+  width: 25%;
+  float: right;
+}
+.resume-wrapper article {
+  width: 75%;
+  float: left;
+}

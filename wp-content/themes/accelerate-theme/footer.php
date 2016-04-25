@@ -19,13 +19,12 @@
 				<p><?php bloginfo('description'); ?></p>
 				<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
+
 				
 			<div id="social">
 				<ul>
-					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/linkedin-icon.png"?>"></li>
-					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/facebook-icon.png"?>"></li>
-					<li><img src="<?php echo home_url()."/wp-content/uploads/2015/10/twitter-icon.png"?>"></li>
-					
+					<li><i class="fa fa-twitter"></i></li>
+					<li><i class="fa fa-linkedin"></i></li>
 				</ul>
 			</div>	
 
