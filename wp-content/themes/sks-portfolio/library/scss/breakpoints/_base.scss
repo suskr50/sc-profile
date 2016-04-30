@@ -16,7 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
+	font-family: $main-font;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -110,6 +110,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
+	font-family:$head-font;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -118,6 +119,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	/* removing text decoration from all headline links */
 	a {
 		text-decoration: none;
+
 	}
 }
 
@@ -154,33 +156,26 @@ HEADER STYLES
 
 .header {
 
-	/*background: url("../../images/sc-computer-lefts.jpg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;*/
-/*
-	min-height: 100%;
-	min-width: 1024px;*/
-
 	background-color:$main-color;
-
-
+	height:90px;
 	
 	/* Set up proportionate scaling */
 	width: 100%;
-	height: auto;
 	
-	/* Set up positioning */
-	position: absolute;
-	top: 0;
-	left: 0;
+	
 	
 }
 
+
 	#logo {
-		margin: 0.75em 0;
-		padding-top:20px;
+		
+
+		 position: absolute;
+    left: 5%;
+   
+    top: 10px;
+ 
+    z-index: 9999;
 
 		
 		a {
@@ -202,6 +197,7 @@ and more scalable.
 
 .nav {
 	border-bottom: 0;
+	display:none;
 	
 	
 
@@ -211,7 +207,7 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 1.75em;
 			text-align:center;
 
 			/*
@@ -928,17 +924,14 @@ FOOTER STYLES
 HOME STYLES
 *********************/
 
-.home {
-	background-color:$main-color;
-
 
 
 	.article-header {
 		
 		background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
-		background-size:contain;
+		background-size:cover;
 		background-position:center;
-		min-height:400px;
+		min-height:150px;
 		width:100%;
 		color:black;
 
@@ -947,16 +940,23 @@ HOME STYLES
 			width:100%;
 			padding:130px 0 0 90px;
 			display:none;
+
 				
 		}
 		
 
 	}
 
+.home {
+	background-color:$main-color;
+
+
+
+
 	.brief-description {
 		margin:0 3%;
 		border-bottom:1px dashed $border-color;
-		margin-top:-150px;
+		
 		
 	}
 
@@ -972,6 +972,7 @@ HOME STYLES
 			display:flex;
 			justify-content:space-around;
 			align-items:center;
+			flex-wrap:wrap;
 
 			figcaption {
 				text-align:center;
@@ -1043,16 +1044,22 @@ HOME STYLES
 		}
 	}
 }
-
+.wrap {
+  width: 100%;
+}
 
 /**************************/
 /*  SINGLE PORTFOLIO PAGE */
 /**************************/
 .case_studies {
 	margin-top:50px;
+
+	a {
+		color:$main-color;
+	}
 	.contact-study-right {
-		width:50%;
-		float:left;
+		width:100%;
+		
 		li {
 			list-style-type:none;
 			margin-bottom:40px;
@@ -1071,9 +1078,8 @@ HOME STYLES
 			margin: 0 30px 30px 20px;
 			text-align:justify;
 		}
-		width:50%;
-		float:left;
-
+		width:100%
+		
 		#service-color {
 			color:$border-color;
 		}

@@ -27,11 +27,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
-								<header class="article-header">
-
-									
-
-								</header>
+						
 
 								<section class="entry-content cf">
 			<?php								
@@ -118,7 +114,7 @@
 
 						</main>
 
-						<?php get_sidebar(); ?>
+				
 
 				</div>
 

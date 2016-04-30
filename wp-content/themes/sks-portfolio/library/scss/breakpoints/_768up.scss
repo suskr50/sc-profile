@@ -17,7 +17,9 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+	background-color:white;
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -301,36 +303,53 @@ mobile. Make sure to double check these!
 } /* end .footer-links */
 
 
+.nav {
+	border-bottom: 0;
+	display:block;
+
+	}
+
+
 /*********************
 HOME STYLES
 *********************/
 
-.home {
-	background-color:$main-color;
 
-
-	.article-header {
-			margin-top:-50px;
+.article-header {
 		
+	background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
+	background-size:cover;
+	background-position:center;
+	min-height:400px;
+	width:100%;
+	color:black;
+	margin:0;
+	padding:0;
+
 
 		.header-text {
 			width:50%;
-			padding:100px 0 0 30px;
+			margin:auto 10px;
 			display:block;
-			
-			
+				
 		}
 		
 
 	}
+
+
+.home {
+	background-color:$main-color;
+		
 	.brief-description {
 			display:none;
 		}
 	.about {
+		width:100%;
 		border-top:1px dashed black;
 		.about-wrapper {
-			width:80%;
-			margin:0 auto;
+			width:90%;
+			margin:0 5%;
 
 			.about-picture{
 				float:left;
@@ -345,3 +364,26 @@ HOME STYLES
 		}
 
 	}
+
+
+
+/**************************/
+/*  SINGLE PORTFOLIO PAGE */
+/**************************/
+.case_studies {
+	
+	.contact-study-right {
+		width:50%;
+		float:left;
+
+	}
+	.contact-study-left {
+		
+		width:50%;
+		float:left;
+		padding-right:20px;
+
+		
+	}
+}
+
