@@ -67,7 +67,7 @@ get_header(); ?>
 				</ul>
 			</aside>
 
-
+<?php endwhile; ?>
 
 
 		
@@ -78,7 +78,7 @@ get_header(); ?>
 		<div class="left">&larr;<a href="<?php echo home_url()?>/#theportfolio">back to work</a></div>
 	</footer>
 	
-				<?php endwhile; ?>
+				
 	</div>
 	</div>
 </section>

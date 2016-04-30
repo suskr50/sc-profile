@@ -37,23 +37,8 @@ function create_custom_post_types() {
         )
     );
 
- register_post_type( 'cc_studies',
-        array(
-            'labels' => array(
-                'name' => __( 'CC Studies' ),
-                'singular_name' => __( 'CC Study' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'cc-studies' ),
-        )
-    );
-
-
 }
 add_action( 'init', 'create_custom_post_types' );
-
-
 
 
 add_theme_support( 'post-thumbnails');  

@@ -1,0 +1,39 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1040px;
+}
+
+
+.home {
+	
+	.article-header {
+		
+		background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
+		background-size:cover;
+		background-position:center;
+		min-height:400px;
+		width:100%;
+		color:black;
+
+
+		.header-text {
+			width:100%;
+			padding:130px 0 0 90px;
+			border:1px solid yellow;
+			
+				
+		}
+		
+
+	}
+	}
