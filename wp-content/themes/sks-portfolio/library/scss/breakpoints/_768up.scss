@@ -25,26 +25,22 @@ body {
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 760px;
-}
-
 /*********************
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
 
-	#logo {
-		margin: 0.75em 0;
-		
-		width:50%;
-		float:left;
+#logo {
+	
+	width:50%;
+	float:left;
+	position:relative;
+	top:20%;
+}
+}
 
-		a {
-			color: $white;
-		}
-	}
+
 
 /*********************
 NAVIGATION STYLES
@@ -52,11 +48,12 @@ NAVIGATION STYLES
 
 .nav {
 	
-
 	border-bottom: 0;
 	margin: 35px 0;
 	width:50%;
 	float:right;
+	display:block;
+
 	
 	ul {
 		background:$black;
@@ -97,7 +94,7 @@ NAVIGATION STYLES
 			li {
 
 				a {
-					padding-left: 10px;
+					padding-left: 110px;
 					border-right: 0;
 					display: block;
 					width: 180px;
@@ -303,11 +300,7 @@ mobile. Make sure to double check these!
 } /* end .footer-links */
 
 
-.nav {
-	border-bottom: 0;
-	display:block;
 
-	}
 
 
 /*********************

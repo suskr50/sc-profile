@@ -37,7 +37,7 @@
 
 
 
-					<section class="entry-content brief-descriptioncf" itemprop="articleBody">
+					<section class="entry-content brief-description cf" itemprop="articleBody">
 
 						<p><?php the_content(); ?></p>
 					</section>
