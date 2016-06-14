@@ -269,7 +269,7 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 .header #logo {
-  width: 50%;
+  width: 40%;
   float: left;
   position: relative;
   top: 20%;
@@ -280,17 +280,16 @@ NAVIGATION STYLES
 *********************/
 .nav {
   border-bottom: 0;
-  margin: 35px 0;
-  width: 50%;
+  width: 54%;
   float: right;
   display: block;
+  margin-top: 35px;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
 .nav ul {
   background: #323944;
-  margin-top: 0;
 }
 .nav li {
   float: left;
@@ -446,6 +445,13 @@ HOME STYLES
   border-bottom: 1px dashed #888888;
   padding: 0 0 50px 0;
 }
+.home .services .inside-contact {
+  border-top: none;
+}
+
+	  /* End
+
+
 
 /**************************/
 /*  SINGLE PORTFOLIO PAGE */

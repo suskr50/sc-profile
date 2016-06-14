@@ -20,9 +20,10 @@
 					<div class="header-text"> 
 						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 						<?php the_content(); ?>
-						<ul>
+						<ul class="fpsocial-links">
 							<li><i class="fa fa-twitter"></i></li>
 							<li><i class="fa fa-linkedin"></i></li>
+							<li><i class="fa fa-github"></i></li>
 						</ul>
 
 					</div>
@@ -44,11 +45,12 @@
 
 					<section class="featured-work">
 						<h1 > Featured Work </h1>
+
 						
 
-						<?php query_posts('posts_per_page=5&post_type=case_studies')?>
+						<?php query_posts('posts_per_page=-1&post_type=case_studies')?>
 
-						<div class="featured-list"> 
+						<div id="my-work" class="featured-list"> 
 
 
 							<?php while ( have_posts() ) : the_post(); 
@@ -108,7 +110,7 @@
 				</section>	
 				<div class="cf"></div>
 
-				<section class="about cf">
+				<section id="about-me" class="about cf">
 					<div class="about-wrapper">
 
 						<?php query_posts('pagename=about')?>

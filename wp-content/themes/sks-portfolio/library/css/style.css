@@ -1491,7 +1491,7 @@ HEADER STYLES
 *********************/
 .header {
   background-color: #45ac9d;
-  height: 90px;
+  height: 120px;
   /* Set up proportionate scaling */
   width: 100%;
 }
@@ -1973,6 +1973,10 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.copyright {
+  text-align: center;
+}
+
 /*********************
 HOME STYLES
 *********************/
@@ -1992,6 +1996,10 @@ HOME STYLES
 
 .home {
   background-color: #45ac9d;
+}
+.home a {
+  color: #45ac9d;
+  font-weight: bold;
 }
 .home .brief-description {
   margin: 0 3%;
@@ -2023,6 +2031,7 @@ HOME STYLES
 .home .services .inside-contact {
   width: 70%;
   margin: 0 auto;
+  border-top: 1px dashed #888888;
 }
 .home .services .inside-contact #ninja_forms_form_1_cont {
   font-family: 'Montserrat';
@@ -2044,8 +2053,12 @@ HOME STYLES
   float: right;
   width: 49%;
 }
+.home .services .inside-contact #ninja_forms_field_1,
+.home .services .inside-contact #ninja_forms_field_2 {
+  height: 30px;
+}
 .home .services .inside-contact #ninja_forms_field_3 {
-  height: 75px;
+  height: 55px;
 }
 .home .services .inside-contact #ninja_forms_field_5 {
   background: none repeat scroll 0 0 #45ac9d;
@@ -2102,21 +2115,25 @@ HOME STYLES
 }
 
 /**************************/
-/*  Resume Page           */
+/*  Resume and Contact Page           */
 /**************************/
-.page-template-default a {
+.page-id-47346 a,
+.page-id-47364 a {
   color: #45ac9d;
   font-weight: bold;
 }
-.page-template-default article {
+.page-id-47346 article,
+.page-id-47364 article {
   max-width: 1024px;
   margin: 0 auto;
 }
-.page-template-default .article-header {
+.page-id-47346 .article-header,
+.page-id-47364 .article-header {
   background: none;
   min-height: 0px;
 }
-.page-template-default .resume-experience {
+.page-id-47346 .resume-experience,
+.page-id-47364 .resume-experience {
   padding-right: 75px;
 }
 
@@ -2242,7 +2259,7 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   .header #logo {
-    width: 50%;
+    width: 40%;
     float: left;
     position: relative;
     top: 20%;
@@ -2253,17 +2270,16 @@ you can add resource intensive styles.
   *********************/
   .nav {
     border-bottom: 0;
-    margin: 35px 0;
-    width: 50%;
+    width: 54%;
     float: right;
     display: block;
+    margin-top: 35px;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
   .nav ul {
     background: #323944;
-    margin-top: 0;
   }
   .nav li {
     float: left;
@@ -2419,7 +2435,14 @@ you can add resource intensive styles.
     border-bottom: 1px dashed #888888;
     padding: 0 0 50px 0;
   }
+  .home .services .inside-contact {
+    border-top: none;
+  }
 
+  	  /* End
+  
+  
+  
   /**************************/
   /*  SINGLE PORTFOLIO PAGE */
   /**************************/

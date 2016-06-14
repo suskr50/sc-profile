@@ -33,7 +33,7 @@ HEADER STYLES
 
 #logo {
 	
-	width:50%;
+	width:40%;
 	float:left;
 	position:relative;
 	top:20%;
@@ -49,15 +49,18 @@ NAVIGATION STYLES
 .nav {
 	
 	border-bottom: 0;
-	margin: 35px 0;
-	width:50%;
+	width:54%;
 	float:right;
 	display:block;
+	
+	margin-top:35px;
+
+
 
 	
 	ul {
 		background:$black;
-		margin-top:0;
+		
 	}
 	li {
 		float: left;
@@ -324,9 +327,9 @@ HOME STYLES
 			width:50%;
 			margin:auto 10px;
 			display:block;
-				
+			
 		}
-		
+	
 
 	}
 
@@ -356,7 +359,19 @@ HOME STYLES
 			padding:0 0 50px 0;
 		}
 
-	}
+
+
+		.services {
+
+			.inside-contact {
+
+				border-top:none;
+			}
+		}
+
+
+
+	} /* End
 
 
 
@@ -379,4 +394,7 @@ HOME STYLES
 		
 	}
 }
+
+
+
 

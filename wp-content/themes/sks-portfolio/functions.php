@@ -232,6 +232,7 @@ function bones_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
+
 /*
 This is a modification of a function found in the
 twentythirteen theme where we can declare some
@@ -241,6 +242,7 @@ and be up and running in seconds.
 */
 function bones_fonts() {
   wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Philosopher:700,400|Muli:400,400italic');
+   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
   
 }
 

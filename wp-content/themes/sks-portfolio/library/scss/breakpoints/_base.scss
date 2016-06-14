@@ -157,7 +157,7 @@ HEADER STYLES
 .header {
 
 	background-color:$main-color;
-	height:90px;
+	height:120px;
 	
 	/* Set up proportionate scaling */
 	width: 100%;
@@ -914,10 +914,12 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		text-align:center;
+	}
 
 /*********************
-HOME STYLES
+HOME PAGE STYLES
 *********************/
 
 
@@ -937,8 +939,11 @@ HOME STYLES
 			padding:130px 0 0 90px;
 			display:none;
 
+		
+
 				
 		}
+			}
 		
 
 	}
@@ -946,7 +951,10 @@ HOME STYLES
 .home {
 	background-color:$main-color;
 
-
+	a {
+		color:$main-color;
+		font-weight:bold;
+	}
 
 
 	.brief-description {
@@ -988,6 +996,8 @@ HOME STYLES
 			width:70%;
 			margin:0 auto;
 
+			border-top:1px dashed $border-color;
+
 
 			#ninja_forms_form_1_cont {
 				font-family: 'Montserrat';
@@ -1013,8 +1023,14 @@ HOME STYLES
 				width:49%
 			}
 
+			#ninja_forms_field_1,
+			#ninja_forms_field_2 {
+				height:30px;
+				
+			}
+
 			#ninja_forms_field_3 {
-				height:75px;
+				height:55px;
 			}
 
 			#ninja_forms_field_5 {
@@ -1084,10 +1100,10 @@ HOME STYLES
 
 
 /**************************/
-/*  Resume Page           */
+/*  Resume and Contact Page           */
 /**************************/
-
-.page-template-default {
+.page-id-47346,
+.page-id-47364 {
 
 	a {
 		color:$main-color;
@@ -1095,7 +1111,7 @@ HOME STYLES
 	}
 
 	article {
-			max-width:1024px;
+		max-width:1024px;
 		margin:0 auto;
 	}
 
@@ -1103,6 +1119,7 @@ HOME STYLES
 	
 		background: none;
 		min-height:0px;
+
 	}
 
 	.resume-experience {
