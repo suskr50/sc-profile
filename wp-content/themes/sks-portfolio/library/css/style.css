@@ -1365,7 +1365,7 @@ GENERAL STYLES
 *********************/
 body {
   font-family: "Muli", sans-serif;
-  font-size: 100%;
+  font-size: 16px;
   line-height: 1.5;
   color: #606060;
   /*	background-color: $gray;*/
@@ -1491,19 +1491,13 @@ HEADER STYLES
 *********************/
 .header {
   background-color: #45ac9d;
-  height: 120px;
-  /* Set up proportionate scaling */
-  width: 100%;
 }
-
-#logo {
-  position: absolute;
-  left: 5%;
-  top: 10px;
-  z-index: 9999;
+.header #inner-header #logo {
+  font-size: 2.0em;
+  padding: 0 10px;
 }
-#logo a {
-  color: #fff;
+.header #inner-header #logo a {
+  color: white;
 }
 
 /*********************
@@ -1517,41 +1511,9 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border-bottom: 0;
   display: none;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-.nav li {
-  /*
-  so you really have to rethink your dropdowns for mobile.
-  you don't want to have it expand too much because the
-  screen is so small. How you manage your menu should
-  depend on the project. Here's some great info on it:
-  http://www.alistapart.com/articles/organizing-mobile/
-  */
-}
-.nav li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 1.0em;
-  text-align: center;
-  font-size: 1.2em;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
-}
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
 }
 
-/* end .nav */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1954,6 +1916,14 @@ SIDEBARS & ASIDES
   margin-bottom: 1.5em;
 }
 
+#boot {
+  color: green;
+  background-color: yellow;
+}
+#boot .container {
+  margin: 0 auto;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -1962,23 +1932,25 @@ FOOTER STYLES
   background-color: #45ac9d;
   color: #f8f9fa;
 }
-
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
-.copyright {
+.footer p {
   text-align: center;
+}
+.footer ul {
+  text-align: center;
+}
+.footer ul li {
+  display: inline;
+  padding: 0 5px;
+}
+.footer ul li a {
+  color: white;
+}
+.footer ul li a:hover {
+  color: yellow;
 }
 
 /*********************
-HOME STYLES
+HOME PAGE STYLES
 *********************/
 .article-header {
   background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
@@ -1992,6 +1964,31 @@ HOME STYLES
   width: 100%;
   padding: 130px 0 0 90px;
   display: none;
+}
+.article-header .header-text ul {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.article-header .header-text ul li {
+  display: inline;
+  padding-left: 10px;
+}
+.article-header .header-text ul li i {
+  color: black;
+}
+
+#mobile-desc {
+  text-align: justify;
+}
+#mobile-desc ul {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+#mobile-desc ul li {
+  display: inline;
+  padding: 0 10px;
 }
 
 .home {
@@ -2028,6 +2025,12 @@ HOME STYLES
   width: 70%;
   margin: 0 auto;
 }
+.home .services .inside-service li {
+  padding-bottom: 20px;
+}
+.home .services .inside-service i {
+  color: #45ac9d;
+}
 .home .services .inside-contact {
   width: 70%;
   margin: 0 auto;
@@ -2045,14 +2048,6 @@ HOME STYLES
 .home .services .inside-contact #ninja_forms_field_5_label {
   font-weight: normal;
 }
-.home .services .inside-contact #ninja_forms_field_1_div_wrap {
-  float: left;
-  width: 49%;
-}
-.home .services .inside-contact #ninja_forms_field_2_div_wrap {
-  float: right;
-  width: 49%;
-}
 .home .services .inside-contact #ninja_forms_field_1,
 .home .services .inside-contact #ninja_forms_field_2 {
   height: 30px;
@@ -2061,10 +2056,10 @@ HOME STYLES
   height: 55px;
 }
 .home .services .inside-contact #ninja_forms_field_5 {
-  background: none repeat scroll 0 0 #45ac9d;
-  float: right;
+  background-color: #45ac9d;
   color: white;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 50px;
+  text-transform: uppercase;
 }
 .home .about {
   border-top: 1px dashed black;
@@ -2413,6 +2408,32 @@ you can add resource intensive styles.
     display: block;
   }
 
+  /**** Nav Bar ***/
+  .header {
+    width: 100%;
+  }
+  .header #inner-header {
+    width: 95%;
+    margin: 0 auto;
+    /* end .nav */
+  }
+  .header #inner-header .nav li {
+    float: right;
+    margin-top: -25px;
+  }
+  .header #inner-header .nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.0em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .header #inner-header .nav li a:hover {
+    background-color: #45ac9d;
+    color: #fff;
+    text-decoration: none;
+  }
+
   .home {
     background-color: #45ac9d;
   }
@@ -2435,8 +2456,56 @@ you can add resource intensive styles.
     border-bottom: 1px dashed #888888;
     padding: 0 0 50px 0;
   }
+  .home .services {
+    background-color: lightblue;
+  }
+  .home .services .inside-service {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .home .services .inside-service li {
+    padding-bottom: 20px;
+  }
+  .home .services .inside-service i {
+    color: #45ac9d;
+  }
   .home .services .inside-contact {
-    border-top: none;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px dashed #888888;
+  }
+  .home .services .inside-contact #ninja_forms_form_1_cont {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #606060;
+  }
+  .home .services .inside-contact #ninja_forms_field_1_label,
+  .home .services .inside-contact #ninja_forms_field_2_label,
+  .home .services .inside-contact #ninja_forms_field_3_label,
+  .home .services .inside-contact #ninja_forms_field_4_label,
+  .home .services .inside-contact #ninja_forms_field_5_label {
+    font-weight: normal;
+  }
+  .home .services .inside-contact #ninja_forms_field_1_div_wrap {
+    float: left;
+    width: 49%;
+  }
+  .home .services .inside-contact #ninja_forms_field_2_div_wrap {
+    float: right;
+    width: 49%;
+  }
+  .home .services .inside-contact #ninja_forms_field_1,
+  .home .services .inside-contact #ninja_forms_field_2 {
+    height: 30px;
+  }
+  .home .services .inside-contact #ninja_forms_field_3 {
+    height: 55px;
+  }
+  .home .services .inside-contact #ninja_forms_field_5 {
+    background: none repeat scroll 0 0 #45ac9d;
+    float: right;
+    color: white;
+    padding: 10px 100px 10px 100px;
   }
 
   	  /* End
@@ -2475,6 +2544,10 @@ you can add resource intensive styles.
   ******************************************************************/
   .wrap {
     width: 100%;
+  }
+
+  .header #inner-header {
+    width: 85%;
   }
 
   /*********************

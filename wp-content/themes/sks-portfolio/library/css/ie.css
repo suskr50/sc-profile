@@ -423,6 +423,32 @@ HOME STYLES
   display: block;
 }
 
+/**** Nav Bar ***/
+.header {
+  width: 100%;
+}
+.header #inner-header {
+  width: 95%;
+  margin: 0 auto;
+  /* end .nav */
+}
+.header #inner-header .nav li {
+  float: right;
+  margin-top: -25px;
+}
+.header #inner-header .nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.0em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.header #inner-header .nav li a:hover {
+  background-color: #45ac9d;
+  color: #fff;
+  text-decoration: none;
+}
+
 .home {
   background-color: #45ac9d;
 }
@@ -445,8 +471,56 @@ HOME STYLES
   border-bottom: 1px dashed #888888;
   padding: 0 0 50px 0;
 }
+.home .services {
+  background-color: lightblue;
+}
+.home .services .inside-service {
+  width: 70%;
+  margin: 0 auto;
+}
+.home .services .inside-service li {
+  padding-bottom: 20px;
+}
+.home .services .inside-service i {
+  color: #45ac9d;
+}
 .home .services .inside-contact {
-  border-top: none;
+  width: 70%;
+  margin: 0 auto;
+  border-top: 1px dashed #888888;
+}
+.home .services .inside-contact #ninja_forms_form_1_cont {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #606060;
+}
+.home .services .inside-contact #ninja_forms_field_1_label,
+.home .services .inside-contact #ninja_forms_field_2_label,
+.home .services .inside-contact #ninja_forms_field_3_label,
+.home .services .inside-contact #ninja_forms_field_4_label,
+.home .services .inside-contact #ninja_forms_field_5_label {
+  font-weight: normal;
+}
+.home .services .inside-contact #ninja_forms_field_1_div_wrap {
+  float: left;
+  width: 49%;
+}
+.home .services .inside-contact #ninja_forms_field_2_div_wrap {
+  float: right;
+  width: 49%;
+}
+.home .services .inside-contact #ninja_forms_field_1,
+.home .services .inside-contact #ninja_forms_field_2 {
+  height: 30px;
+}
+.home .services .inside-contact #ninja_forms_field_3 {
+  height: 55px;
+}
+.home .services .inside-contact #ninja_forms_field_5 {
+  background: none repeat scroll 0 0 #45ac9d;
+  float: right;
+  color: white;
+  padding: 10px 100px 10px 100px;
 }
 
 	  /* End
@@ -478,6 +552,10 @@ be seen on the Desktop.
 ******************************************************************/
 .wrap {
   width: 100%;
+}
+
+.header #inner-header {
+  width: 85%;
 }
 
 /*********************

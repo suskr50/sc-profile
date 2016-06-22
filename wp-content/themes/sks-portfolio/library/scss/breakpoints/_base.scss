@@ -17,7 +17,7 @@ GENERAL STYLES
 
 body {
 	font-family: $main-font;
-	font-size: 100%;
+	font-size: 16px;
 	line-height: 1.5;
 	color: $text-color;
 /*	background-color: $gray;*/
@@ -155,28 +155,21 @@ HEADER STYLES
 *********************/
 
 .header {
-
 	background-color:$main-color;
-	height:120px;
-	
-	/* Set up proportionate scaling */
-	width: 100%;
-	
-	
-	
-}
-
-
-#logo {
-	position: absolute;
-	left: 5%;
-	top: 10px;
-	z-index: 9999;
-
-	a {
-		color: $white;
+	#inner-header {
+		
+		#logo {
+			font-size:2.0em;
+			padding:0 10px;
+			a {
+				color:$footer-font-color;
+			}
+		}
 	}
 }
+
+
+
 
 /*********************
 NAVIGATION STYLES
@@ -191,78 +184,9 @@ and more scalable.
 */
 
 .nav {
-	border-bottom: 0;
 	display:none;
-	
-	
+}
 
-	li {
-
-		a {
-			display: block;
-			color: $white;
-			text-decoration: none;
-			padding: 1.0em;
-			text-align:center;
-			font-size:1.2em;
-
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-
-			}
-		}
-
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
-} /* end .nav */
 
 
 /*********************
@@ -884,6 +808,14 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
+#boot {
+	color:green;
+	background-color:yellow;
+	.container {
+		margin:0 auto;
+	}
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -892,31 +824,29 @@ FOOTER STYLES
 	clear: both;
 	background-color: $main-color;
 	color: $light-gray;
+
+	p{
+	text-align:center;
+	}
+
+	ul {
+		text-align:center;
+
+		li {
+
+		a {
+			color:$footer-font-color;
+		}
+		a:hover {
+			color:yellow;
+		}
+			display:inline;
+			padding:0 5px;
+		}
+	}
 }
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {
-		text-align:center;
-	}
+	
 
 /*********************
 HOME PAGE STYLES
@@ -924,29 +854,50 @@ HOME PAGE STYLES
 
 
 
-	.article-header {
-		
-		background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
-		background-size:cover;
-		background-position:center;
-		min-height:150px;
+.article-header {
+
+	background: #ffffff url("../../images/sc-computer-lefts.jpg") no-repeat right top;
+	background-size:cover;
+	background-position:center;
+	min-height:150px;
+	width:100%;
+	color:black;
+
+	.header-text {
 		width:100%;
-		color:black;
-
-
-		.header-text {
-			width:100%;
-			padding:130px 0 0 90px;
-			display:none;
-
+		padding:130px 0 0 90px;
+		display:none;
 		
-
-				
-		}
+		ul {
+			margin-left:0;
+			padding-left:0;
+			text-align:left;
+			li {
+				display:inline;
+				padding-left:10px;
+				i {
+					color:black;
+				}
 			}
-		
-
+		}
 	}
+
+}
+
+#mobile-desc {
+	text-align:justify;
+
+	ul {
+			margin-left:0;
+			padding-left:0;
+			text-align:center;
+			li {
+				display:inline;
+				padding:0 10px;
+			}
+		}
+
+}
 
 .home {
 	background-color:$main-color;
@@ -986,9 +937,19 @@ HOME PAGE STYLES
 
 	.services {
 		background-color:lightblue;
+
 		.inside-service {
 			width:70%;
 			margin:0 auto;
+
+
+			li {
+				padding-bottom:20px
+			}
+
+			i {
+				color:$main-color;
+			}
 
 		}
 
@@ -1003,30 +964,21 @@ HOME PAGE STYLES
 				font-family: 'Montserrat';
 				font-size:14px;
 				color: #606060;
+
 			}
 
 
 			#ninja_forms_field_1_label,
-			 #ninja_forms_field_2_label,
-			 #ninja_forms_field_3_label,
-			 #ninja_forms_field_4_label,
-			  #ninja_forms_field_5_label{
+			#ninja_forms_field_2_label,
+			#ninja_forms_field_3_label,
+			#ninja_forms_field_4_label,
+			#ninja_forms_field_5_label{
 				font-weight: normal;
-			}
-
-			#ninja_forms_field_1_div_wrap {
-				float:left;
-				width:49%
-			}
-			#ninja_forms_field_2_div_wrap {
-				float:right;
-				width:49%
 			}
 
 			#ninja_forms_field_1,
 			#ninja_forms_field_2 {
 				height:30px;
-				
 			}
 
 			#ninja_forms_field_3 {
@@ -1034,13 +986,13 @@ HOME PAGE STYLES
 			}
 
 			#ninja_forms_field_5 {
-				background: none repeat scroll 0 0 #45ac9d;
-				float:right;
+				background-color:$main-color;
 				color:white;
-				padding:10px 100px 10px 100px;
+				padding:10px 50px;
+				text-transform:uppercase;
 			}
 		}
-		
+
 	}
 	.about {
 		border-top:1px dashed black;
@@ -1051,13 +1003,12 @@ HOME PAGE STYLES
 			.about-picture{
 				padding-top:20px;
 
-				
 			}
 		}
 	}
 }
 .wrap {
-  width: 100%;
+	width: 100%;
 }
 
 /**************************/

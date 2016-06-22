@@ -20,10 +20,12 @@
 					<div class="header-text"> 
 						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 						<?php the_content(); ?>
-						<ul class="fpsocial-links">
-							<li><i class="fa fa-twitter"></i></li>
-							<li><i class="fa fa-linkedin"></i></li>
-							<li><i class="fa fa-github"></i></li>
+						<ul class="fpsocial-links fa-ul">
+							<ul class="fpsocial-links fa-ul">
+							<li><a href="https://twitter.com/susan_schrum"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/susan-schrum-200416b6"><i class="fa fa-linkedin"></i></a></li>
+                     <li><a href="https://github.com/suskr50"><i class="fa fa-github"></i></a></li>
+						</ul>
 						</ul>
 
 					</div>
@@ -38,10 +40,17 @@
 
 
 
-					<section class="entry-content brief-description cf" itemprop="articleBody">
+					<section id="mobile-desc" class="entry-content brief-description cf" itemprop="articleBody">
 
 						<p><?php the_content(); ?></p>
+						<ul class="fpsocial-links fa-ul">
+							<li><a href="https://twitter.com/susan_schrum"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/susan-schrum-200416b6"><i class="fa fa-linkedin"></i></a></li>
+                     <li><a href="https://github.com/suskr50"><i class="fa fa-github"></i></a></li>
+						</ul>
 					</section>
+
+
 
 					<section class="featured-work">
 						<h1 > Featured Work </h1>

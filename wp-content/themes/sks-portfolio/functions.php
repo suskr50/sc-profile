@@ -242,7 +242,11 @@ and be up and running in seconds.
 */
 function bones_fonts() {
   wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Philosopher:700,400|Muli:400,400italic');
-   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+  wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+
+   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/library/css/bootstrap.min.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js', array('jquery'), '3.3.4', true );
   
 }
 

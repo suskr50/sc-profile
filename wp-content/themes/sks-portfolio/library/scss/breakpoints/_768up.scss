@@ -334,6 +334,42 @@ HOME STYLES
 	}
 
 
+
+/**** Nav Bar ***/
+
+.header {
+
+	width:100%;
+
+	#inner-header {
+		width:95%;
+		margin:0 auto;
+		
+
+.nav {
+	
+	li {
+		float:right;
+		margin-top:-25px;
+		a {
+			color: $white;
+			text-decoration: none;
+			padding: 1.0em;
+			text-align:center;
+			font-size:1.2em;
+		}
+		a:hover {
+			background-color:$main-color;
+			color:$white;
+			text-decoration:none;		
+		}
+	}
+
+} /* end .nav */
+}
+}
+
+
 .home {
 	background-color:$main-color;
 		
@@ -362,12 +398,73 @@ HOME STYLES
 
 
 		.services {
+		background-color:lightblue;
 
-			.inside-contact {
+		.inside-service {
+			width:70%;
+			margin:0 auto;
+			
 
-				border-top:none;
+			li {
+				padding-bottom:20px
+			}
+
+			i {
+				color:$main-color;
+			}
+
+		}
+
+		.inside-contact {
+			width:70%;
+			margin:0 auto;
+
+			border-top:1px dashed $border-color;
+
+
+			#ninja_forms_form_1_cont {
+				font-family: 'Montserrat';
+				font-size:14px;
+				color: #606060;
+			}
+
+
+			#ninja_forms_field_1_label,
+			#ninja_forms_field_2_label,
+			#ninja_forms_field_3_label,
+			#ninja_forms_field_4_label,
+			#ninja_forms_field_5_label{
+				font-weight: normal;
+			}
+
+			#ninja_forms_field_1_div_wrap {
+				float:left;
+				width:49%
+			}
+			#ninja_forms_field_2_div_wrap {
+				float:right;
+				width:49%
+			}
+
+			#ninja_forms_field_1,
+			#ninja_forms_field_2 {
+				height:30px;
+				
+			}
+
+			#ninja_forms_field_3 {
+				height:55px;
+			}
+
+			#ninja_forms_field_5 {
+				background: none repeat scroll 0 0 #45ac9d;
+				float:right;
+				color:white;
+				padding:10px 100px 10px 100px;
 			}
 		}
+		
+	}
 
 
 
