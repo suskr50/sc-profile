@@ -2013,10 +2013,18 @@ HOME PAGE STYLES
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
-.home .featured-work .featured-list figcaption {
+.home .featured-work .featured-list .individual-list {
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+.home .featured-work .featured-list figure {
   text-align: center;
+}
+.home .featured-work .featured-list figure figcaption {
+  text-align: center;
+  padding-top: 10px;
 }
 .home .services {
   background-color: lightblue;
@@ -2219,6 +2227,10 @@ tweeners.
   do they need tweaking?
   */
   /* end .footer-links */
+  .home .featured-work .featured-list .individual-list {
+    min-width: 50%;
+    margin-bottom: 40px;
+  }
 }
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -2456,6 +2468,9 @@ you can add resource intensive styles.
     border-bottom: 1px dashed #888888;
     padding: 0 0 50px 0;
   }
+  .home .featured-work .featured-list .individual-list {
+    min-width: 33.33%;
+  }
   .home .services {
     background-color: lightblue;
   }
@@ -2468,44 +2483,6 @@ you can add resource intensive styles.
   }
   .home .services .inside-service i {
     color: #45ac9d;
-  }
-  .home .services .inside-contact {
-    width: 70%;
-    margin: 0 auto;
-    border-top: 1px dashed #888888;
-  }
-  .home .services .inside-contact #ninja_forms_form_1_cont {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    color: #606060;
-  }
-  .home .services .inside-contact #ninja_forms_field_1_label,
-  .home .services .inside-contact #ninja_forms_field_2_label,
-  .home .services .inside-contact #ninja_forms_field_3_label,
-  .home .services .inside-contact #ninja_forms_field_4_label,
-  .home .services .inside-contact #ninja_forms_field_5_label {
-    font-weight: normal;
-  }
-  .home .services .inside-contact #ninja_forms_field_1_div_wrap {
-    float: left;
-    width: 49%;
-  }
-  .home .services .inside-contact #ninja_forms_field_2_div_wrap {
-    float: right;
-    width: 49%;
-  }
-  .home .services .inside-contact #ninja_forms_field_1,
-  .home .services .inside-contact #ninja_forms_field_2 {
-    height: 30px;
-  }
-  .home .services .inside-contact #ninja_forms_field_3 {
-    height: 55px;
-  }
-  .home .services .inside-contact #ninja_forms_field_5 {
-    background: none repeat scroll 0 0 #45ac9d;
-    float: right;
-    color: white;
-    padding: 10px 100px 10px 100px;
   }
 
   	  /* End
@@ -2564,6 +2541,19 @@ you can add resource intensive styles.
 
   .brief-description {
     display: none;
+  }
+
+  .home .services .inside-contact #ninja_forms_field_1_div_wrap,
+  .home .services .inside-contact #ninja_forms_field_2_div_wrap {
+    height: 30px;
+    width: 48%;
+    float: left;
+  }
+  .home .services .inside-contact #ninja_forms_field_1_div_wrap {
+    margin-right: 4%;
+  }
+  .home .featured-work .featured-list .individual-list {
+    min-width: 25%;
   }
 }
 /*********************

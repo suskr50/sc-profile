@@ -18,7 +18,6 @@
 				<div class="article-header ">
 
 					<div class="header-text"> 
-						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 						<?php the_content(); ?>
 						<ul class="fpsocial-links fa-ul">
 							<ul class="fpsocial-links fa-ul">
@@ -68,7 +67,7 @@
 							$link = get_field('link');
 							$image1 = get_field('image1');
 
-							$size = "medium";
+							$size = "thumbnail";
 							?>
 
 							<div class="individual-list">
@@ -108,8 +107,7 @@
 						<div class="contact-wrapper m-all t-3of5 d-3of5 cf">
 							<div class="inside-contact">
 								<h2 > Contact Me </h2>
-								<i class="fa fa-facebook-official"></i>
-								<div class="ninjaform">
+									<div class="ninjaform">
 									<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }?>
 								</div>
 							</div>

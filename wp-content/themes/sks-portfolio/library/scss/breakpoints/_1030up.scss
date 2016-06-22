@@ -49,3 +49,31 @@ HOME STYLES
 	.brief-description {
 			display:none;
 		}
+
+		.home {
+			.services {
+				.inside-contact {
+					#ninja_forms_field_1_div_wrap,
+					#ninja_forms_field_2_div_wrap {
+						
+						height:30px;
+						width:48%;
+						float:left;
+
+					}
+					#ninja_forms_field_1_div_wrap 					{
+						margin-right:4%;
+					}
+
+				}
+			}
+	
+			.featured-work {
+				.featured-list {
+					.individual-list {
+						min-width:25%;
+					}
+				}
+			}
+
+		}
