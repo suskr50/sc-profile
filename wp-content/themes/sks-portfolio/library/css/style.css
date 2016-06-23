@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
 Site Name:
@@ -2003,6 +2004,8 @@ HOME PAGE STYLES
   border-bottom: 1px dashed #888888;
 }
 .home .featured-work {
+  width: 70%;
+  margin: 0 auto;
   padding: 30px 0 40px 0;
   border-bottom: 1px dashed black;
 }
@@ -2010,9 +2013,25 @@ HOME PAGE STYLES
   text-align: center;
 }
 .home .featured-work .featured-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /* OLD… */
+  -ms-flex-align: center;
+  /* You know the drill now… */
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-flow: row wrap;
+  /* Safari 6.1+ */
   flex-flow: row wrap;
 }
 .home .featured-work .featured-list .individual-list {
@@ -2463,10 +2482,6 @@ you can add resource intensive styles.
   .home .about .about-wrapper .about-picture {
     float: left;
     margin: 0 20px;
-  }
-  .home .featured-work {
-    border-bottom: 1px dashed #888888;
-    padding: 0 0 50px 0;
   }
   .home .featured-work .featured-list .individual-list {
     min-width: 33.33%;

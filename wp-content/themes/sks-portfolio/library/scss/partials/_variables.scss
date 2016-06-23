@@ -58,3 +58,29 @@ $main-font: 'Muli', sans-serif;
 $footer-font-color:white;
 $head-font: 'Philosopher', sans-serif;
 $border-color: #888888;
+
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-justify($values) {
+	-webkit-box-pack: $values;
+		-moz-box-pack: $values;
+		-ms-flex-pack: $values;
+		-webkit-justify-content: $values;
+		justify-content:$values;
+}
+
+@mixin flex-align($values) {
+	
+	-webkit-box-align: $values;
+	-moz-box-align: $values;/* OLD… */
+	-ms-flex-align: $values; /* You know the drill now… */
+	-webkit-align-items: $values;
+	align-items: $values;
+}

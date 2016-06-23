@@ -901,6 +901,7 @@ HOME PAGE STYLES
 
 .home {
 	background-color:$main-color;
+	
 
 	a {
 		color:$main-color;
@@ -916,34 +917,43 @@ HOME PAGE STYLES
 	}
 
 	.featured-work {
-		
+		width:70%;
+		margin:0 auto;
 		padding:30px 0 40px 0;
 		border-bottom:1px dashed black;
+		
 
 		h1 {
 			text-align:center;
 		}
-		.featured-list {
-			display:flex;
-			justify-content:space-around;
-			align-items:center;
-			flex-flow:row wrap;
-			
-			.individual-list {
-				min-width:100%;
-				margin-bottom:20px;
-			}
 
-			figure {
-				text-align:center;
-			
+	
 
-			figcaption {
-				text-align:center;
-				padding-top:10px;
+			.featured-list {
+				@include flexbox();
+				@include flex-justify(space-around);
+				@include flex-align(center);
+				-webkit-flex-flow: row wrap; /* Safari 6.1+ */
+				flex-flow:row wrap;
+				
+
+				.individual-list {
+					min-width:100%;
+					margin-bottom:20px;
+				}
+
+
+				figure {
+					text-align:center;
+
+
+					figcaption {
+						text-align:center;
+						padding-top:10px;
+					}
+				}
 			}
-		}
-		}
+		
 	}
 
 	.services {

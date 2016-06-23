@@ -52,40 +52,40 @@
 
 
 					<section class="featured-work">
+
 						<h1 > Featured Work </h1>
+						<div class="featured-wrap">
 
-						
+							<?php query_posts('posts_per_page=-1&post_type=case_studies')?>
 
-						<?php query_posts('posts_per_page=-1&post_type=case_studies')?>
-
-						<div id="my-work" class="featured-list"> 
+							<div id="my-work" class="featured-list"> 
 
 
-							<?php while ( have_posts() ) : the_post(); 
-							$services = get_field('services');
-							$client = get_field('client');
-							$link = get_field('link');
-							$image1 = get_field('image1');
+								<?php while ( have_posts() ) : the_post(); 
+								$services = get_field('services');
+								$client = get_field('client');
+								$link = get_field('link');
+								$image1 = get_field('image1');
 
-							$size = "thumbnail";
-							?>
+								$size = "thumbnail";
+								?>
 
-							<div class="individual-list">
-								<figure >
-									<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image1,$size); ?></a>
-									<figcaption> 
-										<?php echo $services ?>
-									</figcaption>
-								</figure>
+								<div class="individual-list">
+									<figure >
+										<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image1,$size); ?></a>
+										<figcaption> 
+											<?php echo $services ?>
+										</figcaption>
+									</figure>
 
-								
-							</div>
-							
-						<?php endwhile; // end of the loop. ?>
-						<?php wp_reset_query(); // resets the altered query back to the original ?>
+
+								</div>
+
+							<?php endwhile; // end of the loop. ?>
+							<?php wp_reset_query(); // resets the altered query back to the original ?>
+						</div>
+
 					</div>
-
-
 
 				</section>
 

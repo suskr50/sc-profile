@@ -472,10 +472,6 @@ HOME STYLES
   float: left;
   margin: 0 20px;
 }
-.home .featured-work {
-  border-bottom: 1px dashed #888888;
-  padding: 0 0 50px 0;
-}
 .home .featured-work .featured-list .individual-list {
   min-width: 33.33%;
 }
