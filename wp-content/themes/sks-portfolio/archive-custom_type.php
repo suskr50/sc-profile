@@ -14,65 +14,79 @@
 
 <?php get_header(); ?>
 
-			<div id="content">
+<div id="content">
 
-				<div id="inner-content" class="wrap cf">
+	<div id="inner-content" class="wrap cf">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+		<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-						<h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<h1> Helpful Developer Articles </h1>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
-								<header class="article-header">
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+					<?php  $articlelink = get_field('article_link');?>
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), get_author_posts_url( get_the_author_meta( 'ID' ) ));
-									?></p>
+					<div class="helpful-articles">
 
-								</header>
+						<h3 class="h2"><a href="<?php echo $articlelink ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
-								<section class="entry-content cf">
+						<p id="source">Source: <a href="<?php echo $articlelink ?>"><?php echo get_field('source'); ?></a></p>
 
-									<?php the_excerpt(); ?>
 
-								</section>
 
-								<footer class="article-footer">
+						<section class="entry-content cf">
+							
 
-								</footer>
+							<?php the_excerpt(); ?>
 
-							</article>
 
-							<?php endwhile; ?>
+							<div class="article-footer">
+								<p class="byline vcard"><?php
+									printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> ', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), get_author_posts_url( get_the_author_meta( 'ID' ) ));
+									?>
+								</p>
+								<div class="tages">
+									<?php the_tags(); ?>
+								</div>
 
-									<?php bones_page_navi(); ?>
+									<a class="read-more" href="<?php echo $articlelink ?>"><i class="fa fa-certificate"></i> READ MORE </a>
+								
+							</div>
 
-							<?php else : ?>
+							<div style="clear:both;"></div>
+						</section>
+					</div>	
 
-									<article id="post-not-found" class="hentry cf">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the custom posty type archive template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+				</article>
 
-							<?php endif; ?>
+			<?php endwhile; ?>
 
-						</main>
+			<?php bones_page_navi(); ?>
 
-					<?php get_sidebar(); ?>
+		<?php else : ?>
 
-				</div>
+			<article id="post-not-found" class="hentry cf">
+				<header class="article-header">
+					<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+				</header>
+				<section class="entry-content">
+					<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+				</section>
+				<footer class="article-footer">
+					<p><?php _e( 'This is the error message in the custom posty type archive template.', 'bonestheme' ); ?></p>
+				</footer>
+			</article>
 
-			</div>
+		<?php endif; ?>
+
+	</main>
+
+	<?php get_sidebar(); ?>
+
+</div>
+
+</div>
 
 <?php get_footer(); ?>
